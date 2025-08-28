@@ -13,11 +13,16 @@
   <meta charset="utf-8" />
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
 
-  <title>APS SenzaConfini</title>
+  <title>Tech Queens - g(AI)rl power</title>
 
-  <meta name="description" content="" />
+
+  <!-- 1. Canonical URL -->
+
+
+  <!-- 2. Meta Robots (di default è index,follow ma è buona pratica esplicitarlo) -->
+  <!-- 3. (Opzionale) Link alla sitemap – non obbligatorio, ma leggibile dai browser e da alcuni crawler -->
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
@@ -66,7 +71,86 @@
     <div class="layout-container">
       <!-- Navbar -->
 
-      <?php include '../header.php'; ?>
+        <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar">
+          <div class="container-xxl">
+            <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4 ms-0">
+              <a href="../index" class="app-brand-link">
+                <span class="app-brand-logo demo">
+                  <span class="text-primary">
+                    <img src="/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon" style="width: 40px; height: 40px;">
+                  </span>
+                </span>
+                <span class="app-brand-text demo menu-text fw-bold text-heading">APS SenzaConfini</span>
+              </a>
+
+              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
+                <i class="icon-base ti tabler-x icon-sm d-flex align-items-center justify-content-center"></i>
+              </a>
+            </div>
+
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
+                <i class="icon-base ti tabler-menu-2 icon-md"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
+              <ul class="navbar-nav flex-row align-items-center ms-md-auto">
+                <!-- Search -->
+                <!--<li class="nav-item navbar-search-wrapper btn btn-text-secondary btn-icon rounded-pill waves-effect">
+                  <a class="nav-item nav-link search-toggler px-0" href="javascript:void(0);">
+                    <span class="d-inline-block text-body-secondary fw-normal" id="autocomplete"></span>
+                  </a>
+                </li>-->
+                <!-- /Search -->
+
+                <li class="nav-item dropdown-language dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow btn btn-icon btn-text-secondary rounded-pill waves-effect" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="icon-base ti tabler-language icon-22px text-heading"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item waves-effect active" href="javascript:void(0);" data-language="en" data-text-direction="ltr">
+                        <span>English</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item waves-effect" href="javascript:void(0);" data-language="it" data-text-direction="ltr">
+                        <span>Italian</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Language -->
+
+                <!-- Style Switcher -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow btn btn-icon btn-text-secondary rounded-pill waves-effect" id="nav-theme" href="javascript:void(0);" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+                    <i class="tabler-moon-stars icon-base ti icon-22px theme-icon-active text-heading"></i>
+                    <span class="d-none ms-2" id="nav-theme-text">Toggle theme</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-theme-text">
+                    <li>
+                      <button type="button" class="dropdown-item align-items-center waves-effect" data-bs-theme-value="light" aria-pressed="false">
+                        <span><i class="icon-base ti tabler-sun icon-22px me-3" data-icon="sun"></i>Light</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item align-items-center waves-effect active" data-bs-theme-value="dark" aria-pressed="true">
+                        <span><i class="icon-base ti tabler-moon-stars icon-22px me-3" data-icon="moon-stars"></i>Dark</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="dropdown-item align-items-center waves-effect" data-bs-theme-value="system" aria-pressed="false">
+                        <span><i class="icon-base ti tabler-device-desktop-analytics icon-22px me-3" data-icon="device-desktop-analytics"></i>System</span>
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
       <!-- / Navbar -->
 
@@ -80,27 +164,33 @@
               <ul class="menu-inner py-1">
                 <!-- Page -->
                 <li class="menu-item">
-                  <a href="../index.php" class="menu-link">
+                  <a href="../index" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-smart-home"></i>
                     <div data-i18n="Home">Home</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="about-us.php" class="menu-link">
+                  <a href="about-us" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-info-octagon"></i>
                     <div data-i18n="About Us">About Us</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="our-team.php" class="menu-link">
+                  <a href="our-team" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-users-group"></i>
                     <div data-i18n="Our Team">Our Team</div>
                   </a>
                 </li>
                 <li class="menu-item active">
-                  <a href="our-projects.php" class="menu-link">
+                  <a href="our-projects" class="menu-link">
                     <i class="menu-icon icon-base ti tabler-briefcase"></i>
                     <div data-i18n="Our Projects">Our Projects</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="partners" class="menu-link">
+                    <i class="menu-icon icon-base ti tabler-briefcase"></i>
+                    <div data-i18n="Partners">Partners</div>
                   </a>
                 </li>
               </ul>
@@ -197,7 +287,43 @@
           <!--/ Content -->
 
           <!-- Footer -->
-          <?php include '../footer.php'; ?>
+            <section id="adv-footer">
+                <footer class="footer bg-light">
+                  <div class="container-fluid container-p-x pt-12 pb-6">
+                    <div class="row">
+                      <div class="col-12 col-sm-6 col-md-4 mb-6 mb-sm-0">
+                        <h4 class="fw-bold mb-4 footer-text">Social Media</h4>
+                        <div class="social-icon my-4">
+                          <a href="https://www.facebook.com/senzaconfiniAPS" target="_blank" class="btn btn-icon btn-sm btn-facebook me-2 waves-effect waves-light"><i class="icon-base ti tabler-brand-facebook icon-20px"></i></a>
+                          <a href="https://www.instagram.com/senzaconfiniaps" target="_blank" class="btn btn-icon btn-sm btn-instagram me-2 waves-effect waves-light"><i class="icon-base ti tabler-brand-instagram icon-20px"></i></a>
+                          <a href="https://www.linkedin.com/company/aps-senza-confini" target="_blank" class="btn btn-icon btn-sm btn-linkedin me-2 waves-effect waves-light"><i class="icon-base ti tabler-brand-linkedin icon-20px"></i></a>
+                        </div>
+                        <p class="pt-6">
+                          <script>
+                            document.write(new Date().getFullYear());
+                          </script> APSSenzaconfini
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 mb-6 mb-md-0">
+                        <h5>Contact us at:</h5>
+                        <ul class="list-unstyled">
+                          <li><a href="mailto:aps.senzaconfini@gmail.com" class="footer-link d-block pb-2"><strong>Email: </strong>aps.senzaconfini@gmail.com</a></li>
+                          <li><p class="footer-link d-block pb-2"><strong>Phone Number:</strong> +39 3317741692</p></li>
+                          <li><p class="footer-link d-block pb-2"><strong>Address:</strong>Via Oldoini 50, 19122, La Spezia (SP), Italy</p></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 mb-6 mb-sm-0">
+                        <h5>PEC:</h5>
+                        <ul class="list-unstyled">
+                          <li><a href="mailto:senzaconfini.aps@pec.it" class="footer-link d-block pb-2">senzaconfini.aps@pec.it</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+            </section>
+            <!-- Font Awesome (CDN) -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
           <!-- / Footer -->
 
           <div class="content-backdrop fade"></div>

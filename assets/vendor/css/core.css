@@ -25659,7 +25659,7 @@ li:not(:first-child) .dropdown-item, .dropdown-menu .dropdown-item:not(:first-ch
   --bs-menu-sub-active-color: #444050;
   --bs-menu-active-color: var(--bs-primary-contrast);
   --bs-menu-active-bg: var(--bs-primary);
-  --bs-menu-horizontal-active-bg: var(--bs-primary-bg-subtle);
+  --bs-menu-horizontal-active-bg: var(--bs-warning-bg-subtle);
   --bs-menu-box-shadow: 0 0.125rem 0.5rem 0 rgba(47, 43, 61, 0.12);
   --bs-menu-divider-color: var(--bs-white);
   --bs-menu-width: 16.25rem;
@@ -26312,10 +26312,10 @@ li:not(:first-child) .dropdown-item, .dropdown-menu .dropdown-item:not(:first-ch
 .menu-horizontal .menu-item.active > .menu-link:not(.menu-toggle) {
   background: var(--bs-menu-horizontal-active-bg);
   box-shadow: none;
-  color: var(--bs-primary);
+  color: var(--bs-warning);
 }
 .menu-horizontal .menu-item.active > .menu-link:not(.menu-toggle)::before {
-  background-color: var(--bs-primary);
+  background-color: var(--bs-warning);
 }
 .menu-horizontal .menu-item .menu-toggle {
   padding-inline-end: calc(1rem + 1.65em);

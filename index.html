@@ -318,29 +318,7 @@
       </div>
     </div>
 
-    <!-- Overlay -->
-    <div class="layout-overlay layout-menu-toggle"></div>
-
-    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-    <div class="drag-target"></div>
-
     <!--/ Layout wrapper -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".swiper-slide").forEach(slide => {
-          slide.addEventListener("click", () => {
-            const image = slide.getAttribute("data-image");
-            const description = slide.getAttribute("data-description");
-
-            document.getElementById("modalImage").src = image;
-            document.getElementById("modalDescription").innerHTML = description;
-
-            const modal = new bootstrap.Modal(document.getElementById("slideModal"));
-            modal.show();
-          });
-        });
-      });
-  </script>
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/theme.js -->

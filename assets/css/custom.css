@@ -1,66 +1,83 @@
-    .swiper-slide {
-        position: relative;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.swiper-slide {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .swiper-slide:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
+.swiper-slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 
-    .tooltip-container {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: none;
-        background: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        z-index: 10;
-        opacity: 0;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
+.tooltip-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
-    .swiper-slide:hover .tooltip-container {
-        display: block;
-        opacity: 1;
-        transform: translateX(-50%) translateY(-10px);
-    }
+.swiper-slide:hover .tooltip-container {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
 
-    .tooltip-content p {
-        margin: 0;
-        font-size: 14px;
-    }
+.tooltip-content p {
+    margin: 0;
+    font-size: 14px;
+}
 
-    .swiper-slide {
-        position: relative;
-        cursor: pointer;
-    }
+.swiper-slide {
+    position: relative;
+    cursor: pointer;
+}
 
-    .tooltip-container {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: none;
-        background: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        z-index: 10;
-    }
+.tooltip-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10;
+}
 
-    .swiper-slide:hover .tooltip-container {
-        display: block;
-    }
+.swiper-slide:hover .tooltip-container {
+    display: block;
+}
 
-    .modal-img {
-        width: 100%;
-        max-height: 70vh;
-        object-fit: contain;
-    }
+.modal-img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+
+
+
+.image-hover-link {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image-hover {
+  transition: transform 0.3s ease;
+}
+
+.image-hover-link:hover .image-hover {
+  transform: scale(1.05);
+}
+

@@ -25915,12 +25915,12 @@ li:not(:first-child) .dropdown-item, .dropdown-menu .dropdown-item:not(:first-ch
   transition: block-size 0.3s ease-in-out;
 }
 .menu-item.active > .menu-link:not(.menu-toggle) {
-  background: linear-gradient(270deg, rgba(var(--bs-primary-rgb), 0.7) 0%, var(--bs-primary) 100%);
-  box-shadow: 0 0.125rem 0.375rem 0 rgba(var(--bs-primary-rgb), 0.3);
+  background: linear-gradient(270deg, rgba(var(--bs-warning-rgb), 0.7) 0%, var(--bs-warning) 100%);
+  box-shadow: 0 0.125rem 0.375rem 0 rgba(var(--bs-warning-rgb), 0.3);
   color: var(--bs-menu-active-color);
 }
 :dir(rtl) .menu-item.active > .menu-link:not(.menu-toggle) {
-  background: linear-gradient(-270deg, rgba(var(--bs-primary-rgb), 0.7) 0%, var(--bs-primary) 100%);
+  background: linear-gradient(-270deg, rgba(var(--bs-warning-rgb), 0.7) 0%, var(--bs-warning) 100%);
 }
 
 /* Horizontal Menu

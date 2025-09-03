@@ -53,6 +53,7 @@
   <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
   <!-- endbuild -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <!-- Page CSS -->
 
@@ -196,14 +197,22 @@
           <div data-bs-spy="scroll" class="scrollspy-example">
             <!-- Hero Section -->
             <section id="hero-animation">
-              <div id="landingHero" class="section-py landing-hero position-relative">
+              <div id="landingHero" class="section-py landing-hero position-relative bg-light">
                 <div class="container">
                   <div class="hero-text-box text-center position-relative">
-                    <h1 class="text-primary hero-title display-6 fw-extrabold">
+                    <div class="mb-3 animate__animated animate__fadeInDown">
+                      <i class="ti tabler-book text-warning" style="font-size: 48px;"></i>
+                    </div>
+                    <h1 class="text-primary hero-title display-6 fw-extrabold animate__animated animate__fadeInUp">
                       Our Courses
                     </h1>
-                    <div class="landing-hero-btn d-inline-block position-relative">
-                      <a href="https://drive.google.com/drive/folders/1FBEjyVf5vbHPE1UH87tTQC5rcbo12oiX?usp=drive_link" target="_blank" class="btn btn-warning btn-lg">Discover Our Courses</a>
+                    <p class="lead text-secondary mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                      Explore a wide range of educational programs designed to empower global citizens through intercultural learning, civic engagement, and sustainable development.
+                    </p>
+                    <div class="landing-hero-btn d-inline-block position-relative animate__animated animate__fadeInUp animate__delay-2s">
+                      <a href="https://drive.google.com/drive/folders/1FBEjyVf5vbHPE1UH87tTQC5rcbo12oiX?usp=drive_link" target="_blank" class="btn btn-warning btn-lg">
+                        Discover Our Courses
+                      </a>
                     </div>
                   </div>
                 </div>

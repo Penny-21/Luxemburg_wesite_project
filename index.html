@@ -199,29 +199,44 @@
             <!-- / Menu -->
 
             <section id="hero-animation">
-              <div id="landingHero" class="section-py landing-hero position-relative">
-                <div class="container">
-                  <div class="hero-text-box text-center position-relative">
-                    <h1 class="text-primary hero-title display-6 fw-extrabold">
-                      TECH QUEENS - Where Gen Z Women Lead AI's Future
+              <div id="landingHero" class="section-py landing-hero position-relative" style="background: linear-gradient(120deg, #fffbe6 60%, #f8f9fa 100%); min-height: 420px;">
+                <div class="container position-relative">
+                  <div class="hero-text-box text-center position-relative py-4 animate__animated animate__fadeInDown">
+                    <span class="d-inline-block mb-3">
+                      <img src="assets/img/favicon/android-chrome-192x192.png" alt="Tech Queens" style="height: 70px; width: auto; filter: drop-shadow(0 2px 8px #ffe06688);">
+                    </span>
+                    <h1 class="text-primary hero-title display-5 fw-extrabold mb-3" style="letter-spacing: 1px; text-shadow: 0 2px 8px #ffe06644;">
+                      TECH QUEENS <span class="text-warning">—</span> <span style="font-size:1.5rem; font-weight:600; color:#ffb300;">Where Gen Z Women Lead AI's Future</span>
                     </h1>
-
-                    <div class="landing-hero-btn d-inline-block position-relative">
-                      <a href="modules/our-courses.html" class="btn btn-warning btn-lg">Discover Our Courses</a>
+                    <div class="landing-hero-btn d-inline-block position-relative mt-3">
+                      <a href="modules/our-courses.html" class="btn btn-warning btn-lg px-4 shadow-lg hero-btn-animate">Discover Our Courses <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- Creazione sezione testo descrittivo -->
-              <section id="hero-description" class="section-py">
+              <section id="hero-description" class="section-py animate__animated animate__fadeInUp" style="background:rgba(255,251,230,0.7); border-radius: 1.5rem; margin-top:-2rem; box-shadow:0 2px 16px 0 #ffe06633;">
                 <div class="container">
-                  <div class="text-center">
-                    <h2 class="text-warning display-6 fw-bold">Empowering Women in Tech</h2>
-                    <p class="lead">We want every participant to feel that AI is not just for tech experts; it's for everyone. By building digital literacy, encouraging critical thinking, and opening doors to inclusive networks, we aim to reduce the gender gap in AI usage and prevent future inequalities in the workplace. Together, we will create a generation of TECH QUEENS who lead with innovations, empathy, and resilience.</p>
+                  <div class="text-center px-md-5">
+                    <h2 class="text-warning display-6 fw-bold mb-3">Empowering Women in Tech</h2>
+                    <p class="lead mb-0">We want every participant to feel that AI is not just for tech experts; it's for everyone. By building digital literacy, encouraging critical thinking, and opening doors to inclusive networks, we aim to reduce the gender gap in AI usage and prevent future inequalities in the workplace. <br class="d-none d-md-block">Together, we will create a generation of <span class="fw-bold text-warning">TECH QUEENS</span> who lead with innovations, empathy, and resilience.</p>
                   </div>
                 </div>
               </section>
               <!-- Fine sezione testo descrittivo -->
+              <style>
+                .hero-btn-animate {
+                  transition: all 0.18s;
+                  box-shadow: 0 2px 12px 0 #ffe06655;
+                }
+                .hero-btn-animate:hover {
+                  background: linear-gradient(90deg, #ffe066 60%, #ffb300 100%);
+                  color: #222 !important;
+                  transform: translateY(-2px) scale(1.04);
+                  box-shadow: 0 4px 24px 0 #ffe06699;
+                }
+                .animate__animated {animation-duration: 1.1s;}
+              </style>
             </section>
 
             <!-- Content -->

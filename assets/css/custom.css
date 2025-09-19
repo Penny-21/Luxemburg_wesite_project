@@ -351,5 +351,46 @@
     }
 }
 
+/* Partner images in footer */
+.partner-images {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.partner-img {
+    height: 50px;
+    width: auto;
+    max-width: 80px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    border: 2px solid rgba(255, 224, 102, 0.3);
+    padding: 5px;
+}
+
+.partner-img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border-color: #ffe066;
+    box-shadow: 0 4px 12px rgba(255, 224, 102, 0.4);
+}
+
+/* Responsive partner images */
+@media (max-width: 576px) {
+    .partner-images {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .partner-img {
+        height: 40px;
+        max-width: 60px;
+    }
+}
+
 
 

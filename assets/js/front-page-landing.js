@@ -86,13 +86,17 @@
 
   // Reviews slider next and previous
   // -----------------------------------
-  // Add click event listener to next button
-  ReviewsNextBtn.addEventListener('click', function () {
-    ReviewsSliderNext.click();
-  });
-  ReviewsPreviousBtn.addEventListener('click', function () {
-    ReviewsSliderPrev.click();
-  });
+  // Add click event listener to next button only if elements exist
+  if (ReviewsNextBtn && ReviewsSliderNext) {
+    ReviewsNextBtn.addEventListener('click', function () {
+      ReviewsSliderNext.click();
+    });
+  }
+  if (ReviewsPreviousBtn && ReviewsSliderPrev) {
+    ReviewsPreviousBtn.addEventListener('click', function () {
+      ReviewsSliderPrev.click();
+    });
+  }
 
   // Review client logo
   // -----------------------------------

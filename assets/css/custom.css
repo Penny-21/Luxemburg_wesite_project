@@ -354,7 +354,7 @@
 /* Partner images in footer */
 .partner-images {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
@@ -362,9 +362,9 @@
 }
 
 .partner-img {
-    height: 50px;
+    height: 80px;
     width: auto;
-    max-width: 80px;
+    max-width: 120px;
     border-radius: 8px;
     transition: all 0.3s ease;
     opacity: 0.8;
@@ -383,12 +383,12 @@
 @media (max-width: 576px) {
     .partner-images {
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
     }
     
     .partner-img {
-        height: 40px;
-        max-width: 60px;
+        height: 60px;
+        max-width: 90px;
     }
 }
 

@@ -274,5 +274,82 @@
     background: linear-gradient(90deg, #fffbe6 60%, #f8f9fa 100%);
 }
 
+/* Tech Queens Values Image - Stylized Frame */
+.values-image-frame {
+    position: relative;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 20px;
+    background: linear-gradient(135deg, #fffbe6 0%, #fff9e6 50%, #fff3cc 100%);
+    border-radius: 20px;
+    border: 3px solid #ffe066;
+    box-shadow: 
+        0 8px 32px rgba(255, 224, 102, 0.3),
+        0 4px 16px rgba(255, 179, 0, 0.2),
+        inset 0 2px 4px rgba(255, 255, 255, 0.7);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.values-image-frame::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: rotate(45deg);
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.values-image-frame:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: #ffb300;
+    box-shadow: 
+        0 12px 48px rgba(255, 224, 102, 0.4),
+        0 6px 24px rgba(255, 179, 0, 0.3),
+        inset 0 2px 6px rgba(255, 255, 255, 0.8);
+}
+
+.values-image-frame:hover::before {
+    opacity: 1;
+    animation: shimmer-values 1.2s ease-in-out;
+}
+
+.values-image-frame img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.values-image-frame:hover img {
+    transform: scale(1.01);
+}
+
+@keyframes shimmer-values {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* Responsive adjustments for values image */
+@media (max-width: 768px) {
+    .values-image-frame {
+        margin-top: 1.5rem;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .values-image-frame img {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+}
+
 
 

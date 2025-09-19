@@ -203,7 +203,7 @@
                 <div class="container position-relative">
                   <div class="hero-text-box text-center position-relative py-4 animate__animated animate__fadeInDown">
                     <span class="d-inline-block mb-3">
-                      <img src="assets/img/favicon/android-chrome-192x192.png" alt="Tech Queens" style="height: 70px; width: auto; filter: drop-shadow(0 2px 8px #ffe06688);">
+                      <img src="assets/img/favicon/android-chrome-192x192.png" alt="Tech Queens" class="hero-logo-styled" style="height: 120px; width: auto;">
                     </span>
                     <h1 class="text-primary hero-title display-5 fw-extrabold mb-3" style="letter-spacing: 1px; text-shadow: 0 2px 8px #ffe06644;">
                       TECH QUEENS <span class="text-warning">—</span> <span style="font-size:1.5rem; font-weight:600; color:#ffb300;">Where Gen Z Women Lead AI's Future</span>
@@ -236,6 +236,53 @@
                   box-shadow: 0 4px 24px 0 #ffe06699;
                 }
                 .animate__animated {animation-duration: 1.1s;}
+                
+                /* Stili per l'immagine hero con cornice stilizzata */
+                .hero-logo-styled {
+                  border-radius: 50%;
+                  border: 4px solid #ffe066;
+                  padding: 15px;
+                  background: linear-gradient(135deg, #fff9e6 0%, #fffbe6 50%, #fff3cc 100%);
+                  box-shadow: 
+                    0 8px 32px rgba(255, 224, 102, 0.4),
+                    0 4px 16px rgba(255, 179, 0, 0.3),
+                    inset 0 2px 4px rgba(255, 255, 255, 0.8);
+                  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                  position: relative;
+                  overflow: hidden;
+                }
+                
+                .hero-logo-styled::before {
+                  content: '';
+                  position: absolute;
+                  top: -50%;
+                  left: -50%;
+                  width: 200%;
+                  height: 200%;
+                  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+                  transform: rotate(45deg);
+                  transition: all 0.6s;
+                  opacity: 0;
+                }
+                
+                .hero-logo-styled:hover {
+                  transform: scale(1.1) rotate(5deg);
+                  border-color: #ffb300;
+                  box-shadow: 
+                    0 12px 48px rgba(255, 224, 102, 0.6),
+                    0 6px 24px rgba(255, 179, 0, 0.5),
+                    inset 0 2px 6px rgba(255, 255, 255, 0.9);
+                }
+                
+                .hero-logo-styled:hover::before {
+                  opacity: 1;
+                  animation: shimmer 1s ease-in-out;
+                }
+                
+                @keyframes shimmer {
+                  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+                  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+                }
               </style>
             </section>
 

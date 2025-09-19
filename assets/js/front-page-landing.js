@@ -121,6 +121,11 @@
   // Pricing Plans
   // -----------------------------------
   document.addEventListener('DOMContentLoaded', function (event) {
+    // Check if price duration toggler exists before using it
+    if (!priceDurationToggler) {
+      return; // Exit early if the element doesn't exist
+    }
+
     function togglePrice() {
       if (priceDurationToggler.checked) {
         // If checked

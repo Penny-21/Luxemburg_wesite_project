@@ -48,31 +48,35 @@
   </head>
 
   <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only sr-only-focusable btn btn-primary">Skip to main content</a>
+    
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
       <div class="layout-container">
         <!-- Navbar -->
-        <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar">
+        <header role="banner">
+        <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar" role="navigation" aria-label="Main navigation">
           <div class="container-xxl">
             <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4 ms-0">
               <a href="../index" class="app-brand-link">
                 <span class="app-brand-logo demo">
                   <span class="text-primary">
-                    <img src="/assets/img/favicon/favicon-32x32.png" alt="Logo" class="logo-icon">
+                    <img src="/assets/img/favicon/favicon-32x32.png" alt="Tech Queens logo" class="logo-icon">
                   </span>
                 </span>
                 <span class="app-brand-text demo menu-text fw-bold text-heading">Tech Queens - g(AI)rl power</span>
               </a>
 
-              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
-                <i class="icon-base ti tabler-x icon-sm d-flex align-items-center justify-content-center"></i>
-              </a>
+              <button href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none" aria-label="Close mobile menu" aria-expanded="false">
+                <i class="icon-base ti tabler-x icon-sm d-flex align-items-center justify-content-center" aria-hidden="true"></i>
+              </button>
             </div>
 
             <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
-                <i class="icon-base ti tabler-menu-2 icon-md"></i>
-              </a>
+              <button class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)" aria-label="Open mobile menu" aria-expanded="false">
+                <i class="icon-base ti tabler-menu-2 icon-md" aria-hidden="true"></i>
+              </button>
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
@@ -132,6 +136,7 @@
             </div>
           </div>
         </nav>
+        </header>
         <!-- / Navbar -->
 
         <!-- Layout container -->
@@ -139,31 +144,31 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Menu -->
-            <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu flex-grow-0">
+            <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu flex-grow-0" role="navigation" aria-label="Secondary navigation">
               <div class="container-xxl d-flex h-100">
-                <ul class="menu-inner py-1">
+                <ul class="menu-inner py-1" role="menubar">
                   <!-- Page -->
-                  <li class="menu-item">
-                    <a href="../index.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-smart-home"></i>
+                  <li class="menu-item" role="none">
+                    <a href="../index.html" class="menu-link" role="menuitem">
+                      <i class="menu-icon icon-base ti tabler-smart-home" aria-hidden="true"></i>
                       <div>Home</div>
                     </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="about-us.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-info-octagon"></i>
+                  <li class="menu-item" role="none">
+                    <a href="about-us.html" class="menu-link" role="menuitem">
+                      <i class="menu-icon icon-base ti tabler-info-octagon" aria-hidden="true"></i>
                       <div>The Project</div>
                     </a>
                   </li>
-                  <li class="menu-item active">
-                    <a href="our-team.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-users-group"></i>
+                  <li class="menu-item active" role="none">
+                    <a href="our-team.html" class="menu-link" role="menuitem" aria-current="page">
+                      <i class="menu-icon icon-base ti tabler-users-group" aria-hidden="true"></i>
                       <div>Our Consortium</div>
                     </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="our-courses.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-book"></i>
+                  <li class="menu-item" role="none">
+                    <a href="our-courses.html" class="menu-link" role="menuitem">
+                      <i class="menu-icon icon-base ti tabler-book" aria-hidden="true"></i>
                       <div>Course</div>
                     </a>
                   </li>
@@ -173,14 +178,15 @@
             <!-- / Menu -->
 
             <!-- Content -->
+            <main id="main-content" role="main">
             <div data-bs-spy="scroll" class="scrollspy-example">
               <!-- Hero Section -->
-              <section id="hero-animation">
+              <section id="hero-animation" aria-labelledby="hero-title">
                 <div id="landingHero" class="section-py landing-hero position-relative">
                   <div class="container">
                     <div class="hero-text-box text-center position-relative">
                       <!-- <h1 class="text-primary hero-title display-6 fw-extrabold">Aps Senza confini</h1> -->
-                      <h1 class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Consortium">Our Consortium</h1>
+                      <h1 id="hero-title" class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Consortium">Our Consortium</h1>
                     </div>
                   </div>
                 </div>
@@ -188,9 +194,9 @@
               <!-- Hero Section End -->
 
               <!-- Team Members Section -->
-              <section id="team-members" class="section-py">
+              <section id="team-members" class="section-py" aria-labelledby="consortium-title">
                 <div class="container">
-                  <h2 class="mb-4 text-warning fw-bold">Our Consortium</h2>
+                  <h2 id="consortium-title" class="mb-4 text-warning fw-bold">Our Consortium</h2>
                   <div class="mb-5 text-center">
                     <p class="lead">Meet the organizations and people who make <span class="fw-semibold text-warning">Tech Queens</span> possible!<br>
                     <span class="badge bg-gradient-warning text-white px-3 py-2 mt-2 role-badge">Partners & Collaborators</span></p>
@@ -253,10 +259,12 @@
               </section>
               <!-- Team Members Section End -->
             </div>
+            </main>
             <!--/ Content -->
 
             <!-- Footer -->
-            <section id="adv-footer">
+            <footer role="contentinfo">
+            <section id="adv-footer" class="footer bg-light">
                 <footer class="footer bg-light">
                   <div class="container-fluid container-p-x pt-12 pb-6">
                     <div class="row">
@@ -283,6 +291,7 @@
                   </div>
                 </footer>
             </section>
+            </footer>
             <!-- Font Awesome (CDN) -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
             <!-- / Footer -->

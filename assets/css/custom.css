@@ -1,3 +1,77 @@
+/* Accessibility improvements */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.sr-only-focusable:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+    border: 2px solid #ffe066 !important;
+    background: #fffbe6 !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    z-index: 9999 !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+/* Focus indicators for better keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #ffe066 !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 0 3px rgba(255, 224, 102, 0.3) !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .text-warning {
+        color: #000 !important;
+    }
+    .btn-warning {
+        background-color: #000 !important;
+        border-color: #000 !important;
+        color: #fff !important;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .animate__animated {
+        animation: none !important;
+    }
+    .hero-btn-animate:hover {
+        transform: none !important;
+    }
+    .team-card:hover {
+        transform: none !important;
+    }
+    .hero-logo-styled:hover {
+        transform: none !important;
+    }
+    .values-image-frame:hover {
+        transform: none !important;
+    }
+}
+
+/* Original carousel styles */
 .swiper-slide {
     position: relative;
     cursor: pointer;

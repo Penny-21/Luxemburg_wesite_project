@@ -71,13 +71,15 @@
   </head>
 
   <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only sr-only-focusable btn btn-primary">Skip to main content</a>
+    
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
       <div class="layout-container">
         <!-- Navbar -->
-
-
-        <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar">
+        <header role="banner">
+          <nav class="layout-navbar navbar navbar-expand-xl align-items-center" id="layout-navbar" role="navigation" aria-label="Main navigation">
           <div class="container-xxl">
             <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4 ms-0">
               <a href="index.html" class="app-brand-link">
@@ -89,15 +91,15 @@
                 <span class="app-brand-text demo menu-text fw-bold text-heading">Tech Queens - g(AI)rl power</span>
               </a>
 
-              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
-                <i class="icon-base ti tabler-x icon-sm d-flex align-items-center justify-content-center"></i>
-              </a>
+              <button href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none" aria-label="Close mobile menu" aria-expanded="false">
+                <i class="icon-base ti tabler-x icon-sm d-flex align-items-center justify-content-center" aria-hidden="true"></i>
+              </button>
             </div>
 
             <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)">
-                <i class="icon-base ti tabler-menu-2 icon-md"></i>
-              </a>
+              <button class="nav-item nav-link px-0 me-xl-6" href="javascript:void(0)" aria-label="Open mobile menu" aria-expanded="false">
+                <i class="icon-base ti tabler-menu-2 icon-md" aria-hidden="true"></i>
+              </button>
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center justify-content-end" id="navbar-collapse">
@@ -132,23 +134,23 @@
                 <!-- Style Switcher -->
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow btn btn-icon btn-text-secondary rounded-pill waves-effect" id="nav-theme" href="javascript:void(0);" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
-                    <i class="tabler-moon-stars icon-base ti icon-22px theme-icon-active text-heading"></i>
+                    <i class="tabler-moon-stars icon-base ti icon-22px theme-icon-active text-heading" aria-hidden="true"></i>
                     <span class="d-none ms-2" id="nav-theme-text">Toggle theme</span>
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-theme-text">
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-theme">
                     <li>
                       <button type="button" class="dropdown-item align-items-center waves-effect" data-bs-theme-value="light" aria-pressed="false">
-                        <span><i class="icon-base ti tabler-sun icon-22px me-3" data-icon="sun"></i>Light</span>
+                        <span><i class="icon-base ti tabler-sun icon-22px me-3" data-icon="sun" aria-hidden="true"></i>Light</span>
                       </button>
                     </li>
                     <li>
                       <button type="button" class="dropdown-item align-items-center waves-effect active" data-bs-theme-value="dark" aria-pressed="true">
-                        <span><i class="icon-base ti tabler-moon-stars icon-22px me-3" data-icon="moon-stars"></i>Dark</span>
+                        <span><i class="icon-base ti tabler-moon-stars icon-22px me-3" data-icon="moon-stars" aria-hidden="true"></i>Dark</span>
                       </button>
                     </li>
                     <li>
                       <button type="button" class="dropdown-item align-items-center waves-effect" data-bs-theme-value="system" aria-pressed="false">
-                        <span><i class="icon-base ti tabler-device-desktop-analytics icon-22px me-3" data-icon="device-desktop-analytics"></i>System</span>
+                        <span><i class="icon-base ti tabler-device-desktop-analytics icon-22px me-3" data-icon="device-desktop-analytics" aria-hidden="true"></i>System</span>
                       </button>
                     </li>
                   </ul>
@@ -157,7 +159,7 @@
             </div>
           </div>
         </nav>
-
+        </header>
         <!-- / Navbar -->
 
         <!-- Layout container -->
@@ -165,31 +167,31 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Menu -->
-            <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu flex-grow-0">
+            <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu flex-grow-0" role="navigation" aria-label="Secondary navigation">
               <div class="container-xxl d-flex h-100">
-                <ul class="menu-inner py-1">
+                <ul class="menu-inner py-1" role="menubar">
                   <!-- Page -->
-                  <li class="menu-item active">
-                    <a href="index.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-smart-home"></i>
+                  <li class="menu-item active" role="none">
+                    <a href="index.html" class="menu-link" role="menuitem" aria-current="page">
+                      <i class="menu-icon icon-base ti tabler-smart-home" aria-hidden="true"></i>
                       <div>Home</div>
                     </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="modules/about-us.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-info-octagon"></i>
+                  <li class="menu-item" role="none">
+                    <a href="modules/about-us.html" class="menu-link" role="menuitem">
+                      <i class="menu-icon icon-base ti tabler-info-octagon" aria-hidden="true"></i>
                       <div>The Project</div>
                     </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="modules/our-team.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-users-group"></i>
+                  <li class="menu-item" role="none">
+                    <a href="modules/our-team.html" class="menu-link" role="menuitem">
+                      <i class="menu-icon icon-base ti tabler-users-group" aria-hidden="true"></i>
                       <div>Our Consortium</div>
                     </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="modules/our-courses.html" class="menu-link">
-                      <i class="menu-icon icon-base ti tabler-book"></i>
+                  <li class="menu-item" role="none">
+                    <a href="modules/our-courses.html" class="menu-link" role="menuitem">
+                      <i class="menu-icon icon-base ti tabler-book" aria-hidden="true"></i>
                       <div>Course</div>
                     </a>
                   </li>
@@ -198,32 +200,36 @@
             </aside>
             <!-- / Menu -->
 
-            <section id="hero-animation">
+            <main id="main-content" role="main">
+
+            <section id="hero-animation" aria-labelledby="hero-title">
               <div id="landingHero" class="section-py landing-hero position-relative landing-hero-bg">
                 <div class="container position-relative">
                   <div class="hero-text-box text-center position-relative py-4 animate__animated animate__fadeInDown">
                     <span class="d-inline-block mb-3">
-                      <img src="assets/img/favicon/android-chrome-192x192.png" alt="Tech Queens" class="hero-logo-styled hero-logo">
+                      <img src="assets/img/favicon/android-chrome-192x192.png" alt="Tech Queens logo: empowering women in artificial intelligence and technology" class="hero-logo-styled hero-logo">
                     </span>
-                    <h1 class="text-primary hero-title display-5 fw-extrabold mb-3 hero-title-shadow">
+                    <h1 id="hero-title" class="text-primary hero-title display-5 fw-extrabold mb-3 hero-title-shadow">
                       TECH QUEENS <span class="text-warning">—</span> <span class="hero-subtitle">Where Gen Z Women Lead AI's Future</span>
                     </h1>
                     <div class="landing-hero-btn d-inline-block position-relative mt-3">
-                      <a href="modules/our-courses.html" class="btn btn-warning btn-lg px-4 shadow-lg hero-btn-animate">Discover Our Courses <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                      <a href="modules/our-courses.html" class="btn btn-warning btn-lg px-4 shadow-lg hero-btn-animate">
+                        Discover Our Courses <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
+                      </a>
                     </div>
                     
                     <!-- Tech Queens Values Image with Stylized Frame -->
                     <div class="values-image-frame animate__animated animate__fadeInUp animate__delay-1s">
-                      <img src="assets/img/custom-img/techqueens-values.png" alt="Tech Queens Values" class="img-fluid">
+                      <img src="assets/img/custom-img/techqueens-values.png" alt="Tech Queens core values: Innovation, Inclusion, Empowerment, and Collaboration represented in a visual diagram" class="img-fluid">
                     </div>
                   </div>
                 </div>
               </div>
               <!-- Creazione sezione testo descrittivo -->
-              <section id="hero-description" class="section-py animate__animated animate__fadeInUp hero-description-bg">
+              <section id="hero-description" class="section-py animate__animated animate__fadeInUp hero-description-bg" aria-labelledby="empowerment-title">
                 <div class="container">
                   <div class="text-center px-md-5">
-                    <h2 class="text-warning display-6 fw-bold mb-3">Empowering Women in Tech</h2>
+                    <h2 id="empowerment-title" class="text-warning display-6 fw-bold mb-3">Empowering Women in Tech</h2>
                     <p class="lead mb-0">We want every participant to feel that AI is not just for tech experts; it's for everyone. By building digital literacy, encouraging critical thinking, and opening doors to inclusive networks, we aim to reduce the gender gap in AI usage and prevent future inequalities in the workplace. <br class="d-none d-md-block">Together, we will create a generation of <span class="fw-bold text-warning">TECH QUEENS</span> who lead with innovations, empathy, and resilience.</p>
                   </div>
                 </div>
@@ -232,8 +238,9 @@
             </section>
 
             <!-- Content -->
-            <section id="intro-cards" class="section-py">
+            <section id="intro-cards" class="section-py" aria-labelledby="intro-cards-title">
               <div class="container">
+                <h2 id="intro-cards-title" class="sr-only">Navigate our site sections</h2>
                 <div class="row g-4">
                   
                   <!-- Card About Us -->
@@ -244,7 +251,8 @@
                         <p class="card-text">
                           Discover who we are, our mission and the values that guide Tech Queens in empowering women in technology.
                         </p>
-                        <a href="modules/about-us.html" class="btn btn-warning mt-3">Learn More</a>
+                        <a href="modules/about-us.html" class="btn btn-warning mt-3" aria-describedby="about-desc">Learn More</a>
+                        <span id="about-desc" class="sr-only">Learn more about Tech Queens mission and values</span>
                       </div>
                     </div>
                   </div>
@@ -257,7 +265,8 @@
                         <p class="card-text">
                           Meet the amazing teams behind Tech Queens: innovators, creators and leaders shaping the AI future.
                         </p>
-                        <a href="modules/our-team.html" class="btn btn-warning mt-3">Meet the Teams</a>
+                        <a href="modules/our-team.html" class="btn btn-warning mt-3" aria-describedby="team-desc">Meet the Teams</a>
+                        <span id="team-desc" class="sr-only">Meet the consortium members and organizations behind Tech Queens</span>
                       </div>
                     </div>
                   </div>
@@ -269,7 +278,8 @@
                         <p class="card-text">
                           Explore our diverse range of courses designed to empower women in technology and AI.
                         </p>
-                        <a href="modules/our-courses.html" class="btn btn-warning mt-3">View Courses</a>
+                        <a href="modules/our-courses.html" class="btn btn-warning mt-3" aria-describedby="courses-desc">View Courses</a>
+                        <span id="courses-desc" class="sr-only">Explore our courses designed to empower women in AI and technology</span>
                       </div>
                     </div>
                   </div>
@@ -277,20 +287,19 @@
                 </div>
               </div>
             </section>
+            </main>
             <!--/ Content -->
 
             <!-- Footer -->
-
-
-            <section id="adv-footer">
-                <footer class="footer bg-light">
+            <footer role="contentinfo">
+                <section id="adv-footer" class="footer bg-light">
                   <div class="container-fluid container-p-x pt-12 pb-6">
                     <div class="row">
                       <div class="col-12 col-sm-6 col-md-4 mb-6 mb-sm-0">
                         <h4 class="fw-bold mb-4 footer-text">Co-Founded By:</h4>
                         <div class="partner-images">
-                          <img src="assets/img/custom-img/anefore-removebg-preview.png" alt="Partner 1" class="partner-img">
-                          <img src="assets/img/custom-img/EUlogo-removebg-preview.png" alt="Partner 3" class="partner-img">
+                          <img src="assets/img/custom-img/anefore-removebg-preview.png" alt="ANEFORE - Agency for Non-Formal Education and Qualification" class="partner-img">
+                          <img src="assets/img/custom-img/EUlogo-removebg-preview.png" alt="European Union - Erasmus+ Programme co-funding" class="partner-img">
                         </div>
                         <p class="pt-6">
                           <script>
@@ -307,8 +316,8 @@
                       </div>
                     </div>
                   </div>
-                </footer>
-            </section>
+                </section>
+            </footer>
             <!-- Font Awesome (CDN) -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 

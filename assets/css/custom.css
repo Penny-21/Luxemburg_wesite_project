@@ -1185,5 +1185,271 @@ textarea:focus {
     }
 }
 
+/* Google Forms Section Styling */
+.forms-icon {
+    font-size: 48px;
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255, 224, 102, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.15),
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        0 0 0 3px rgba(255, 224, 102, 0.3);
+    border-color: #ffe066;
+}
+
+.form-header {
+    padding: 25px 20px 20px;
+    background: linear-gradient(135deg, #fffbe6 0%, #fff9e6 100%);
+    border-bottom: 2px solid rgba(255, 224, 102, 0.2);
+    text-align: center;
+}
+
+.form-icon-wrapper {
+    margin-bottom: 15px;
+}
+
+.form-card-icon {
+    font-size: 2.5em;
+    color: #ffe066;
+    background: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(255, 224, 102, 0.3);
+    border: 2px solid rgba(255, 224, 102, 0.4);
+}
+
+.form-title {
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.form-description {
+    color: #6c757d;
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.form-container {
+    flex: 1;
+    padding: 0;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #f8f9fa;
+}
+
+.embedded-form {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #fff;
+}
+
+/* Google Forms Placeholder Styling */
+.form-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.form-placeholder .placeholder-content {
+    text-align: center;
+    padding: 30px 20px;
+    color: #6c757d;
+}
+
+.form-placeholder .placeholder-icon {
+    font-size: 3em;
+    color: #ffe066;
+    margin-bottom: 15px;
+}
+
+.form-placeholder h5 {
+    color: #495057;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.form-placeholder p {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.form-placeholder small {
+    font-size: 0.85em;
+}
+
+/* Form Info Footer */
+.form-info {
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 1px solid rgba(255, 224, 102, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6c757d;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.info-item-icon {
+    font-size: 1.2em;
+    color: #ffe066;
+}
+
+/* Form Card Animations */
+.form-card .form-icon-wrapper {
+    transition: transform 0.3s ease;
+}
+
+.form-card:hover .form-icon-wrapper {
+    transform: scale(1.1);
+}
+
+.form-card:hover .form-card-icon {
+    background: #ffe066;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(255, 224, 102, 0.4);
+}
+
+/* Responsive adjustments for Google Forms section */
+@media (max-width: 992px) {
+    .form-card {
+        margin-bottom: 30px;
+    }
+    
+    .form-wrapper {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-card {
+        border-radius: 12px;
+        margin-bottom: 25px;
+    }
+    
+    .form-header {
+        padding: 20px 15px 15px;
+    }
+    
+    .form-card-icon {
+        font-size: 2em;
+        padding: 12px;
+    }
+    
+    .form-title {
+        font-size: 1.2em;
+    }
+    
+    .form-description {
+        font-size: 0.95em;
+    }
+    
+    .form-wrapper {
+        height: 320px;
+    }
+    
+    .form-info {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .info-item {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-card {
+        border-radius: 10px;
+        margin: 0 10px 20px;
+    }
+    
+    .form-header {
+        padding: 15px 10px 12px;
+    }
+    
+    .form-card-icon {
+        font-size: 1.8em;
+        padding: 10px;
+    }
+    
+    .form-title {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    
+    .form-description {
+        font-size: 0.9em;
+    }
+    
+    .form-wrapper {
+        height: 300px;
+    }
+    
+    .form-placeholder .placeholder-content {
+        padding: 20px 15px;
+    }
+    
+    .form-placeholder .placeholder-icon {
+        font-size: 2.5em;
+        margin-bottom: 12px;
+    }
+    
+    .form-placeholder h5 {
+        font-size: 1.1em;
+    }
+    
+    .form-placeholder p {
+        font-size: 0.9em;
+    }
+    
+    .form-info {
+        padding: 12px;
+        gap: 8px;
+    }
+    
+    .info-item {
+        font-size: 0.8em;
+    }
+    
+    .info-item-icon {
+        font-size: 1.1em;
+    }
+}
+
 
 

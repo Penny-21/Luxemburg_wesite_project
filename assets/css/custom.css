@@ -994,5 +994,196 @@ textarea:focus {
     }
 }
 
+/* PowerPoint Presentation Section Styling */
+.presentation-icon {
+    font-size: 48px;
+}
+
+.powerpoint-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255, 224, 102, 0.2);
+}
+
+.powerpoint-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.15),
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        0 0 0 3px rgba(255, 224, 102, 0.3);
+    border-color: #ffe066;
+}
+
+.ppt-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background: #f8f9fa;
+}
+
+.embedded-ppt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+/* PowerPoint Placeholder Styling */
+.ppt-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+}
+
+.placeholder-content {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c757d;
+}
+
+.placeholder-icon {
+    font-size: 4em;
+    color: #ffe066;
+    margin-bottom: 20px;
+}
+
+.placeholder-content h4 {
+    color: #495057;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.placeholder-content p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* PowerPoint Info Cards */
+.ppt-info {
+    padding: 25px;
+    background: linear-gradient(135deg, #fffbe6 0%, #fff9e6 100%);
+    border-top: 2px solid rgba(255, 224, 102, 0.3);
+}
+
+.info-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 224, 102, 0.2);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-color: #ffe066;
+}
+
+.info-icon {
+    font-size: 2em;
+    color: #ffe066;
+    margin-bottom: 10px;
+}
+
+.info-card h6 {
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustments for PowerPoint section */
+@media (max-width: 768px) {
+    .powerpoint-container {
+        border-radius: 12px;
+    }
+    
+    .embedded-ppt,
+    .ppt-placeholder {
+        border-radius: 12px;
+    }
+    
+    .ppt-wrapper {
+        padding-bottom: 60%; /* Slightly taller on mobile */
+    }
+    
+    .placeholder-content {
+        padding: 30px 15px;
+    }
+    
+    .placeholder-icon {
+        font-size: 3em;
+    }
+    
+    .ppt-info {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .powerpoint-container {
+        border-radius: 10px;
+        margin: 0 10px;
+    }
+    
+    .embedded-ppt,
+    .ppt-placeholder {
+        border-radius: 10px;
+    }
+    
+    .ppt-wrapper {
+        padding-bottom: 65%; /* Even taller on small screens */
+    }
+    
+    .placeholder-content {
+        padding: 20px 10px;
+    }
+    
+    .placeholder-content h4 {
+        font-size: 1.3em;
+    }
+    
+    .placeholder-content p {
+        font-size: 1em;
+    }
+    
+    .placeholder-icon {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    
+    .info-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .info-icon {
+        font-size: 1.5em;
+    }
+    
+    .ppt-info {
+        padding: 15px;
+    }
+}
+
 
 

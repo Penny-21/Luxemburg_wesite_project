@@ -156,90 +156,633 @@
             <div data-bs-spy="scroll" class="scrollspy-example">
               <!-- Hero Section -->
               <section id="hero-animation" aria-labelledby="hero-title">
-                <div id="landingHero" class="section-py landing-hero position-relative">
-                  <div class="container">
-                    <div class="hero-text-box text-center position-relative">
-                      <!-- <h1 class="text-primary hero-title display-6 fw-extrabold">Aps Senza confini</h1> -->
-                      <h1 id="hero-title" class="text-primary hero-title display-6 fw-extrabold" data-i18n="Our Consortium">Our Consortium</h1>
+                <div id="landingHero" class="section-py landing-hero position-relative landing-hero-bg-enhanced">
+                  <div class="container position-relative">
+                    <!-- Floating Elements -->
+                    <div class="floating-elements">
+                      <div class="floating-icon floating-icon-1">
+                        <i class="fas fa-handshake"></i>
+                      </div>
+                      <div class="floating-icon floating-icon-2">
+                        <i class="fas fa-globe-europe"></i>
+                      </div>
+                      <div class="floating-icon floating-icon-3">
+                        <i class="fas fa-users"></i>
+                      </div>
+                      <div class="floating-icon floating-icon-4">
+                        <i class="fas fa-heart"></i>
+                      </div>
+                    </div>
+                    
+                    <div class="row align-items-center min-vh-75">
+                      <div class="col-lg-6">
+                        <div class="hero-text-box position-relative py-4 animate__animated animate__fadeInLeft">
+                          <div class="hero-badge animate__animated animate__pulse animate__infinite">
+                            <i class="fas fa-crown me-2"></i>
+                            <span>Meet Our Amazing Team</span>
+                          </div>
+                          
+                          <h1 id="hero-title" class="hero-title-enhanced display-4 fw-extrabold mb-3">
+                            The 
+                            <span class="text-highlight-animated">Queens</span>
+                            Behind the Magic
+                          </h1>
+                          
+                          <p class="hero-subtitle-enhanced lead mb-4">
+                            Meet the <strong>incredible organizations</strong> and <strong>passionate people</strong> who are making Tech Queens a reality! Our consortium brings together diverse expertise from across Europe to empower young women in AI. 🌟
+                          </p>
+                          
+                          <div class="hero-stats-mini mb-4">
+                            <div class="row text-center g-3">
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">🤝</div>
+                                  <div class="stat-label-mini">Collaboration</div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">🌍</div>
+                                  <div class="stat-label-mini">European</div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">💪</div>
+                                  <div class="stat-label-mini">Empowering</div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">✨</div>
+                                  <div class="stat-label-mini">Innovative</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="hero-buttons d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#team-members" class="btn btn-gradient-primary btn-lg">
+                              <i class="fas fa-users me-2"></i>
+                              Meet the Consortium
+                            </a>
+                            <a href="#partnership-network" class="btn hero-btn-secondary btn-lg">
+                              <i class="fas fa-network-wired me-2"></i>
+                              Our Network
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-6">
+                        <div class="hero-visual animate__animated animate__fadeInRight">
+                          <div class="hero-image-stack">
+                            <div class="hero-image-main">
+                              <img src="../assets/img/illustrations/lady-with-laptop-light.png" alt="Team collaboration and partnership" class="img-fluid hero-main-img">
+                            </div>
+                            <div class="hero-image-floating hero-float-1">
+                              <div class="achievement-badge">
+                                <i class="fas fa-flag text-info"></i>
+                                <span>EU Partners</span>
+                              </div>
+                            </div>
+                            <div class="hero-image-floating hero-float-2">
+                              <div class="notification-popup">
+                                <i class="fas fa-star text-warning"></i>
+                                <span>Excellence</span>
+                              </div>
+                            </div>
+                            <div class="hero-image-floating hero-float-3">
+                              <div class="achievement-badge">
+                                <i class="fas fa-lightbulb text-success"></i>
+                                <span>Innovation</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </section>
               <!-- Hero Section End -->
 
+              <!-- Consortium Overview Section -->
+              <section id="consortium-overview" class="section-py bg-gradient-light">
+                <div class="container">
+                  <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold text-primary mb-3">
+                      <i class="fas fa-network-wired me-3 text-warning"></i>
+                      Our Powerful Alliance
+                    </h2>
+                    <p class="lead text-muted">A diverse consortium of organizations working together to empower the next generation of women in tech</p>
+                  </div>
+                  
+                  <div class="consortium-stats">
+                    <div class="row text-center g-4 mb-5">
+                      <div class="col-6 col-lg-3">
+                        <div class="stat-circle">
+                          <div class="stat-circle-inner">
+                            <i class="fas fa-building text-primary"></i>
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Partner<br>Organizations</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-6 col-lg-3">
+                        <div class="stat-circle">
+                          <div class="stat-circle-inner">
+                            <i class="fas fa-globe-europe text-success"></i>
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">European<br>Countries</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-6 col-lg-3">
+                        <div class="stat-circle">
+                          <div class="stat-circle-inner">
+                            <i class="fas fa-clock text-info"></i>
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Years<br>Combined Exp.</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-6 col-lg-3">
+                        <div class="stat-circle">
+                          <div class="stat-circle-inner">
+                            <i class="fas fa-heart text-danger"></i>
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">% Commitment<br>to Impact</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="consortium-values">
+                    <div class="row g-4">
+                      <div class="col-md-4">
+                        <div class="value-card text-center">
+                          <div class="value-icon mb-3">
+                            <i class="fas fa-hands-helping text-primary"></i>
+                          </div>
+                          <h4 class="value-title">Collaboration</h4>
+                          <p class="value-description">Working together across borders to maximize our collective impact and reach.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="value-card text-center">
+                          <div class="value-icon mb-3">
+                            <i class="fas fa-rocket text-warning"></i>
+                          </div>
+                          <h4 class="value-title">Innovation</h4>
+                          <p class="value-description">Bringing fresh perspectives and cutting-edge approaches to AI education.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="value-card text-center">
+                          <div class="value-icon mb-3">
+                            <i class="fas fa-users text-success"></i>
+                          </div>
+                          <h4 class="value-title">Inclusion</h4>
+                          <p class="value-description">Ensuring every young woman has the opportunity to thrive in technology.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
               <!-- Team Members Section -->
               <section id="team-members" class="section-py" aria-labelledby="consortium-title">
                 <div class="container">
-                  <h2 id="consortium-title" class="mb-4 text-warning fw-bold">Our Consortium</h2>
-                  <div class="mb-5 text-center">
-                    <p class="lead">Meet the organizations and people who make <span class="fw-semibold text-warning">Tech Queens</span> possible!<br>
-                    <span class="badge bg-gradient-warning text-white px-3 py-2 mt-2 role-badge">Partners & Collaborators</span></p>
+                  <div class="text-center mb-5">
+                    <h2 id="consortium-title" class="display-6 fw-bold text-primary mb-3">
+                      <i class="fas fa-crown me-3 text-warning"></i>
+                      Meet Our Amazing Partners
+                    </h2>
+                    <p class="lead text-muted">Get to know the organizations and passionate people behind Tech Queens</p>
                   </div>
-                  <div class="row mb-5 align-items-center team-row">
-                    <div class="col-md-8 order-md-2">
-                      <h3 class="fw-bold text-dark mb-2">Amities Luxembourg-Armenie <span class="badge bg-warning text-dark ms-2 role-badge">Coordinator</span></h3>
-                      <p class="mb-3 partner-description">The ALA's mission is to promote and improve Luxembourgish society while encouraging respect and understanding for cultural variety. Our vision is for a harmonious society where people from many cultural origins work together to address global challenges and promote sustainable development. Our organization promotes the following objectives, with a focus on intercultural learning, integration, and coexistence:</p>
-                      <ul class="mb-0 ps-3 partner-list">
-                        <li>To promote intercultural, inter-faith, and inter-community dialogue.</li>
-                        <li>To promote meaningful communication and understanding among people of various backgrounds—ethnic, religious, social, ability.</li>
-                        <li>To use the strengths of many cultures to address global issues.</li>
-                        <li>To empower representatives from many cultures to address and resolve global concerns collaboratively.</li>
-                        <li>To recognize Luxembourg's diverse cultures and subcultures, and actively promote their visibility and respect.</li>
-                        <li>To organize international youth educational projects on civic education.</li>
-                      </ul>
+                  
+                  <!-- ALA Card -->
+                  <div class="partner-card modern-card mb-5">
+                    <div class="partner-header">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <div class="partner-logo-wrapper">
+                            <img src="../assets/img/custom-img/ALA-site-508x508.png" alt="Amities Luxembourg-Armenie" class="partner-logo">
+                            <div class="partner-badge coordinator-badge">
+                              <i class="fas fa-star"></i>
+                              <span>Coordinator</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="partner-header-content">
+                            <h3 class="partner-title">Amities Luxembourg-Armenie</h3>
+                            <div class="partner-meta mb-3">
+                              <span class="location-badge">
+                                <i class="fas fa-map-marker-alt me-1"></i>
+                                Luxembourg
+                              </span>
+                              <span class="role-badge coordinator">
+                                <i class="fas fa-crown me-1"></i>
+                                Project Coordinator
+                              </span>
+                            </div>
+                            <p class="partner-intro">
+                              Leading the charge in promoting intercultural dialogue and empowering diverse communities across Europe through innovative educational projects.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-4 d-flex align-items-stretch justify-content-center order-md-1">
-                      <div class="card shadow-lg border-0 w-100 team-card h-100 team-card-bg d-flex flex-column">
-                        <div class="d-flex flex-column align-items-center p-4 flex-grow-1 justify-content-center">
-                          <a href="https://apres.lu/" target="_blank" class="image-hover-link mb-3">
-                            <img src="../assets/img/custom-img/ALA-site-508x508.png" class="rounded-circle shadow team-img team-member-img" alt="Amities Luxembourg logo" />
+                    
+                    <div class="partner-content">
+                      <div class="partner-mission mb-4">
+                        <h4 class="section-subtitle">
+                          <i class="fas fa-bullseye me-2 text-warning"></i>
+                          Our Mission
+                        </h4>
+                        <p class="mission-text">
+                          ALA's mission is to promote and improve Luxembourgish society while encouraging respect and understanding for cultural variety. Our vision is for a harmonious society where people from many cultural origins work together to address global challenges and promote sustainable development.
+                        </p>
+                      </div>
+                      
+                      <div class="partner-objectives">
+                        <h4 class="section-subtitle">
+                          <i class="fas fa-list-check me-2 text-primary"></i>
+                          Key Objectives
+                        </h4>
+                        <div class="objectives-grid">
+                          <div class="objective-item">
+                            <div class="objective-icon">
+                              <i class="fas fa-comments"></i>
+                            </div>
+                            <p>Promote intercultural, inter-faith, and inter-community dialogue</p>
+                          </div>
+                          
+                          <div class="objective-item">
+                            <div class="objective-icon">
+                              <i class="fas fa-handshake"></i>
+                            </div>
+                            <p>Foster meaningful communication among diverse backgrounds</p>
+                          </div>
+                          
+                          <div class="objective-item">
+                            <div class="objective-icon">
+                              <i class="fas fa-globe"></i>
+                            </div>
+                            <p>Use cultural strengths to address global challenges</p>
+                          </div>
+                          
+                          <div class="objective-item">
+                            <div class="objective-icon">
+                              <i class="fas fa-users"></i>
+                            </div>
+                            <p>Empower diverse communities for collaborative solutions</p>
+                          </div>
+                          
+                          <div class="objective-item">
+                            <div class="objective-icon">
+                              <i class="fas fa-eye"></i>
+                            </div>
+                            <p>Promote visibility and respect for Luxembourg's cultures</p>
+                          </div>
+                          
+                          <div class="objective-item">
+                            <div class="objective-icon">
+                              <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <p>Organize international youth educational projects</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="partner-actions mt-4">
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
+                          <a href="https://apres.lu/" target="_blank" class="btn btn-gradient-primary">
+                            <i class="fas fa-globe me-2"></i>
+                            Visit Website
                           </a>
-                          <h5 class="card-title mb-1">Amities Luxembourg-Armenie</h5>
-                          <span class="badge bg-warning text-dark mb-3">Coordinator</span>
-                          <a href="https://www.linkedin.com/company/aps-senza-confini" target="_blank" class="btn btn-outline-warning btn-sm mb-3">
-                            <i class="icon-base ti tabler-brand-linkedin icon-20px me-1"></i> LinkedIn
+                          <a href="https://www.linkedin.com/company/aps-senza-confini" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-linkedin me-2"></i>
+                            LinkedIn
                           </a>
-                          <a href="https://apres.lu/" class="btn btn-outline-warning btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="Visit our website">
-                            Visit our website
+                          <a href="mailto:amitiesluxarm@gmail.com" class="btn btn-outline-warning">
+                            <i class="fas fa-envelope me-2"></i>
+                            Contact
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="row mb-5 align-items-center team-row">
-                    <div class="col-md-8">
-                      <h3 class="fw-bold text-dark mb-2">APS Senza Confini <span class="badge bg-warning text-dark ms-2 role-badge">Partner</span></h3>
-                      <p class="mb-3 partner-description">Senza Confini is a Social Promotion Association founded in 2020 in La Spezia with the mission to inspire and empower young people to take an active role in shaping their communities and society at large. Operating at both local and European levels, the organization focuses on fostering active citizenship among youth, addressing key challenges such as climate change, gender equality, democracy, and social inclusion. Our work is rooted in the belief that young people are the driving force of positive change. Through innovative projects, educational initiatives, and community engagement, Senza Confini supports youth in becoming active participants in their social, cultural, and political environments, while fostering connections across borders to build a stronger, more inclusive Europe.</p>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-stretch justify-content-center">
-                      <div class="card shadow-lg border-0 w-100 team-card h-100 team-card-bg">
-                        <div class="d-flex flex-column align-items-center p-4">
-                          <a href="https://senzaconfiniaps.eu/" target="_blank" class="image-hover-link mb-3">
-                            <img src="../assets/img/custom-img/android-chrome-192x192.png" class="rounded-circle shadow team-img team-member-img" alt="APS Senza Confini logo" />
-                          </a>
-                          <h5 class="card-title mb-1">APS Senza Confini</h5>
-                          <span class="badge bg-warning text-dark mb-2">Partner</span>
-                          <a href="https://www.linkedin.com/company/aps-senza-confini" target="_blank" class="btn btn-outline-warning btn-sm mt-1">
-                            <i class="icon-base ti tabler-brand-linkedin icon-20px me-1"></i> LinkedIn
-                          </a>
-                          <div class="mt-3">
-                            <a href="../assets/PIF/PIF - APS SENZA CONFINI.pdf" class="btn btn-outline-warning btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="PIF - APS SENZA CONFINI">
-                              PIF - APS SENZA CONFINI
-                            </a>
+                  
+                  <!-- APS Senza Confini Card -->
+                  <div class="partner-card modern-card mb-5">
+                    <div class="partner-header">
+                      <div class="row align-items-center">
+                        <div class="col-lg-3">
+                          <div class="partner-logo-wrapper">
+                            <img src="../assets/img/custom-img/android-chrome-192x192.png" alt="APS Senza Confini" class="partner-logo">
+                            <div class="partner-badge partner-badge-standard">
+                              <i class="fas fa-handshake"></i>
+                              <span>Partner</span>
+                            </div>
                           </div>
-                          <div class="mt-3">
-                            <a href="https://senzaconfiniaps.eu/" class="btn btn-outline-warning btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="Visit our website">
-                              Visit our website
-                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="partner-header-content">
+                            <h3 class="partner-title">APS Senza Confini</h3>
+                            <div class="partner-meta mb-3">
+                              <span class="location-badge">
+                                <i class="fas fa-map-marker-alt me-1"></i>
+                                La Spezia, Italy
+                              </span>
+                              <span class="role-badge partner">
+                                <i class="fas fa-handshake me-1"></i>
+                                Strategic Partner
+                              </span>
+                            </div>
+                            <p class="partner-intro">
+                              A dynamic Social Promotion Association inspiring and empowering young people to become active changemakers in their communities and beyond.
+                            </p>
                           </div>
                         </div>
                       </div>
                     </div>
+                    
+                    <div class="partner-content">
+                      <div class="partner-mission mb-4">
+                        <h4 class="section-subtitle">
+                          <i class="fas fa-bullseye me-2 text-warning"></i>
+                          Our Mission
+                        </h4>
+                        <p class="mission-text">
+                          Senza Confini is a Social Promotion Association founded in 2020 with the mission to inspire and empower young people to take an active role in shaping their communities and society. We focus on fostering active citizenship among youth, addressing key challenges such as climate change, gender equality, democracy, and social inclusion.
+                        </p>
+                      </div>
+                      
+                      <div class="partner-focus-areas">
+                        <h4 class="section-subtitle">
+                          <i class="fas fa-target me-2 text-success"></i>
+                          Focus Areas
+                        </h4>
+                        <div class="focus-areas-grid">
+                          <div class="focus-area-tag">
+                            <i class="fas fa-leaf me-2"></i>
+                            Climate Change
+                          </div>
+                          <div class="focus-area-tag">
+                            <i class="fas fa-venus-mars me-2"></i>
+                            Gender Equality
+                          </div>
+                          <div class="focus-area-tag">
+                            <i class="fas fa-vote-yea me-2"></i>
+                            Democracy
+                          </div>
+                          <div class="focus-area-tag">
+                            <i class="fas fa-heart me-2"></i>
+                            Social Inclusion
+                          </div>
+                          <div class="focus-area-tag">
+                            <i class="fas fa-users me-2"></i>
+                            Youth Empowerment
+                          </div>
+                          <div class="focus-area-tag">
+                            <i class="fas fa-graduation-cap me-2"></i>
+                            Education
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="partner-actions mt-4">
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
+                          <a href="https://senzaconfiniaps.eu/" target="_blank" class="btn btn-gradient-primary">
+                            <i class="fas fa-globe me-2"></i>
+                            Visit Website
+                          </a>
+                          <a href="https://www.linkedin.com/company/aps-senza-confini" target="_blank" class="btn btn-outline-primary">
+                            <i class="fab fa-linkedin me-2"></i>
+                            LinkedIn
+                          </a>
+                          <a href="../assets/PIF/PIF - APS SENZA CONFINI.pdf" target="_blank" class="btn btn-outline-info">
+                            <i class="fas fa-file-pdf me-2"></i>
+                            View PIF
+                          </a>
+                          <a href="mailto:aps.senzaconfini@gmail.com" class="btn btn-outline-warning">
+                            <i class="fas fa-envelope me-2"></i>
+                            Contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-
                 </div>
               </section>
               <!-- Team Members Section End -->
+
+              <!-- Partnership Network Section -->
+              <section id="partnership-network" class="section-py bg-gradient-light">
+                <div class="container">
+                  <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold text-primary mb-3">
+                      <i class="fas fa-network-wired me-3 text-warning"></i>
+                      Building Connections Across Europe
+                    </h2>
+                    <p class="lead text-muted">Our network spans cultures, borders, and expertise to create meaningful impact</p>
+                  </div>
+                  
+                  <div class="network-showcase">
+                    <div class="row g-4">
+                      <!-- Network Strength -->
+                      <div class="col-lg-4">
+                        <div class="network-card h-100">
+                          <div class="network-icon-wrapper">
+                            <i class="fas fa-globe-europe network-icon"></i>
+                          </div>
+                          <h4 class="network-title">European Reach</h4>
+                          <p class="network-description">
+                            Our partners span from Luxembourg to Italy, bringing diverse cultural perspectives and educational expertise to the Tech Queens project.
+                          </p>
+                          <div class="network-stats">
+                            <div class="mini-stat">
+                              <span class="mini-stat-number">2</span>
+                              <span class="mini-stat-label">Countries</span>
+                            </div>
+                            <div class="mini-stat">
+                              <span class="mini-stat-number">500+</span>
+                              <span class="mini-stat-label">Young Women Reached</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Expertise Diversity -->
+                      <div class="col-lg-4">
+                        <div class="network-card h-100">
+                          <div class="network-icon-wrapper">
+                            <i class="fas fa-puzzle-piece network-icon"></i>
+                          </div>
+                          <h4 class="network-title">Complementary Expertise</h4>
+                          <p class="network-description">
+                            Each partner brings unique strengths - from intercultural dialogue to youth empowerment, creating a powerful synergy for our mission.
+                          </p>
+                          <div class="expertise-tags">
+                            <span class="expertise-tag">Cultural Integration</span>
+                            <span class="expertise-tag">Youth Development</span>
+                            <span class="expertise-tag">Digital Education</span>
+                            <span class="expertise-tag">AI Training</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Future Vision -->
+                      <div class="col-lg-4">
+                        <div class="network-card h-100">
+                          <div class="network-icon-wrapper">
+                            <i class="fas fa-rocket network-icon"></i>
+                          </div>
+                          <h4 class="network-title">Growing Impact</h4>
+                          <p class="network-description">
+                            Together, we're building a sustainable ecosystem that will continue empowering young women in technology long after the project ends.
+                          </p>
+                          <div class="impact-metrics">
+                            <div class="metric-item">
+                              <i class="fas fa-arrow-up text-success"></i>
+                              <span>Expanding Network</span>
+                            </div>
+                            <div class="metric-item">
+                              <i class="fas fa-star text-warning"></i>
+                              <span>Quality Excellence</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Contact & Connect Section -->
+              <section id="contact-connect" class="section-py">
+                <div class="container">
+                  <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold text-primary mb-3">
+                      <i class="fas fa-handshake me-3 text-warning"></i>
+                      Ready to Connect?
+                    </h2>
+                    <p class="lead text-muted">Get in touch with our amazing partners and join the Tech Queens community!</p>
+                  </div>
+                  
+                  <div class="contact-options">
+                    <div class="row g-4">
+                      <!-- ALA Contact -->
+                      <div class="col-lg-6">
+                        <div class="contact-card modern-card h-100">
+                          <div class="contact-header">
+                            <div class="contact-logo">
+                              <img src="../assets/img/custom-img/ALA-site-508x508.png" alt="ALA">
+                            </div>
+                            <div class="contact-info">
+                              <h4 class="contact-title">Amities Luxembourg-Armenie</h4>
+                              <p class="contact-role">Project Coordinator</p>
+                            </div>
+                          </div>
+                          
+                          <div class="contact-content">
+                            <p class="contact-description">
+                              For general project inquiries, partnership opportunities, or coordination matters.
+                            </p>
+                            
+                            <div class="contact-methods">
+                              <a href="mailto:amitiesluxarm@gmail.com" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                  <span class="method-label">Email</span>
+                                  <span class="method-value">amitiesluxarm@gmail.com</span>
+                                </div>
+                              </a>
+                              
+                              <a href="https://apres.lu/" target="_blank" class="contact-method">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                  <span class="method-label">Website</span>
+                                  <span class="method-value">Visit our site</span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- APS Contact -->
+                      <div class="col-lg-6">
+                        <div class="contact-card modern-card h-100">
+                          <div class="contact-header">
+                            <div class="contact-logo">
+                              <img src="../assets/img/custom-img/android-chrome-192x192.png" alt="APS">
+                            </div>
+                            <div class="contact-info">
+                              <h4 class="contact-title">APS Senza Confini</h4>
+                              <p class="contact-role">Strategic Partner</p>
+                            </div>
+                          </div>
+                          
+                          <div class="contact-content">
+                            <p class="contact-description">
+                              For questions about youth empowerment programs, educational content, or participation opportunities.
+                            </p>
+                            
+                            <div class="contact-methods">
+                              <a href="mailto:aps.senzaconfini@gmail.com" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                  <span class="method-label">Email</span>
+                                  <span class="method-value">aps.senzaconfini@gmail.com</span>
+                                </div>
+                              </a>
+                              
+                              <a href="https://senzaconfiniaps.eu/" target="_blank" class="contact-method">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                  <span class="method-label">Website</span>
+                                  <span class="method-value">Visit our site</span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Call to Action -->
+                  <div class="collaboration-cta text-center mt-5">
+                    <div class="cta-content">
+                      <h3 class="cta-title mb-3">Want to Join Our Mission?</h3>
+                      <p class="cta-description lead mb-4">
+                        Are you an organization passionate about empowering women in technology? Let's explore how we can work together!
+                      </p>
+                      <div class="cta-buttons">
+                        <a href="our-courses.html" class="btn btn-gradient-primary btn-lg me-3">
+                          <i class="fas fa-rocket me-2"></i>
+                          Explore Our Courses
+                        </a>
+                        <a href="about-us.html" class="btn btn-outline-primary btn-lg">
+                          <i class="fas fa-info-circle me-2"></i>
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
             </main>
             <!--/ Content -->
@@ -315,6 +858,9 @@
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/front-page-landing.js"></script>
+    
+    <!-- Enhanced Animations for Modern Design -->
+    <script src="../assets/js/enhanced-animations.js"></script>
 
     <!-- Page JS -->
   </body>

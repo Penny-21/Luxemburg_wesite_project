@@ -170,39 +170,249 @@
 
             <!-- Content -->
             <div data-bs-spy="scroll" class="scrollspy-example">
-              <!-- Hero Section -->
+              <!-- Hero: Start -->
               <section id="hero-animation">
-                <div id="landingHero" class="section-py landing-hero position-relative bg-light">
-                  <div class="container">
-                    <div class="hero-text-box text-center position-relative">
-                      <div class="mb-3 animate__animated animate__fadeInDown">
-                        <i class="ti tabler-book text-warning course-icon"></i>
+                <div id="landingHero" class="section-py landing-hero position-relative landing-hero-bg-enhanced">
+                  <div class="container position-relative">
+                    <!-- Floating Elements -->
+                    <div class="floating-elements">
+                      <div class="floating-icon floating-icon-1">
+                        <i class="fas fa-play-circle"></i>
                       </div>
-                      <h1 class="text-primary hero-title display-6 fw-extrabold animate__animated animate__fadeInUp">
-                        Our Course
-                      </h1>
-                      <p class="lead text-secondary mb-4 animate__animated animate__fadeInUp animate__delay-1s">
-                        Explore our comprehensive video course series designed to empower global citizens through intercultural learning, civic engagement, and sustainable development.
-                      </p>
+                      <div class="floating-icon floating-icon-2">
+                        <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <div class="floating-icon floating-icon-3">
+                        <i class="fas fa-puzzle-piece"></i>
+                      </div>
+                      <div class="floating-icon floating-icon-4">
+                        <i class="fas fa-certificate"></i>
+                      </div>
+                    </div>
+                    
+                    <div class="row align-items-center min-vh-75">
+                      <div class="col-lg-6">
+                        <div class="hero-text-box position-relative py-4 animate__animated animate__fadeInLeft">
+                          <div class="hero-badge animate__animated animate__pulse animate__infinite">
+                            <i class="fas fa-book-open me-2"></i>
+                            <span>Interactive Learning Experience</span>
+                          </div>
+                          
+                          <h1 class="hero-title-enhanced display-4 fw-extrabold mb-3">
+                            Master 
+                            <span class="text-highlight-animated">AI & Technology</span>
+                          </h1>
+                          
+                          <p class="hero-subtitle-enhanced lead mb-4">
+                            Dive into our comprehensive <strong>interactive course</strong> featuring 8 engaging videos, mini-games, and downloadable resources. Experience <strong>hands-on learning</strong> that makes AI accessible and exciting! 🚀
+                          </p>
+                          
+                          <div class="hero-stats-mini mb-4">
+                            <div class="row text-center g-3">
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">🎥</div>
+                                  <div class="stat-label-mini">8 Videos</div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">🎮</div>
+                                  <div class="stat-label-mini">Mini Games</div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">📚</div>
+                                  <div class="stat-label-mini">Free Resources</div>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                <div class="stat-item-mini">
+                                  <div class="stat-number-mini">🏆</div>
+                                  <div class="stat-label-mini">Certificate</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="hero-buttons d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#video-courses" class="btn btn-gradient-primary btn-lg">
+                              <i class="fas fa-play me-2"></i>
+                              Start Learning Now
+                            </a>
+                            <a href="#final-feedback" class="btn hero-btn-secondary btn-lg">
+                              <i class="fas fa-clipboard-check me-2"></i>
+                              Course Feedback
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-6">
+                        <div class="hero-visual animate__animated animate__fadeInRight">
+                          <div class="hero-image-stack">
+                            <div class="hero-image-main">
+                              <img src="../assets/img/illustrations/girl-with-laptop-light.png" alt="Interactive learning with AI technology" class="img-fluid hero-main-img">
+                            </div>
+                            <div class="hero-image-floating hero-float-1">
+                              <div class="achievement-badge">
+                                <i class="fas fa-video text-primary"></i>
+                                <span>Video Course</span>
+                              </div>
+                            </div>
+                            <div class="hero-image-floating hero-float-2">
+                              <div class="notification-popup">
+                                <i class="fas fa-gamepad text-success"></i>
+                                <span>Interactive Games</span>
+                              </div>
+                            </div>
+                            <div class="hero-image-floating hero-float-3">
+                              <div class="achievement-badge">
+                                <i class="fas fa-download text-warning"></i>
+                                <span>Free PDFs</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </section>
-              <!-- Hero Section End -->
+              <!-- Hero: End -->
+
+              <!-- Course Introduction -->
+              <section class="section-py bg-gradient-light">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5">
+                      <h2 class="display-6 fw-bold mb-3 animate__animated animate__fadeInUp">
+                        Your AI Learning Journey Starts Here
+                      </h2>
+                      <p class="lead text-secondary animate__animated animate__fadeInUp animate__delay-1s">
+                        Welcome to an innovative educational experience that combines cutting-edge AI knowledge with hands-on activities. 
+                        Our course is designed to make artificial intelligence accessible, engaging, and relevant to your daily life.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <!-- Course Features -->
+                  <div class="row g-4 mb-5">
+                    <div class="col-lg-3 col-md-6">
+                      <div class="modern-card text-center h-100 card-hover-effect">
+                        <div class="card-icon-wrapper mb-3">
+                          <div class="card-icon">
+                            <i class="fas fa-video"></i>
+                          </div>
+                        </div>
+                        <h5 class="card-title">Expert-Led Videos</h5>
+                        <p class="card-text">Learn from industry experts through comprehensive video lessons covering AI fundamentals to advanced applications.</p>
+                        <div class="feature-badge">8 Videos</div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                      <div class="modern-card text-center h-100 card-hover-effect">
+                        <div class="card-icon-wrapper mb-3">
+                          <div class="card-icon">
+                            <i class="fas fa-gamepad"></i>
+                          </div>
+                        </div>
+                        <h5 class="card-title">Interactive Games</h5>
+                        <p class="card-text">Reinforce your learning with engaging mini-games including quizzes, memory challenges, and puzzles.</p>
+                        <div class="feature-badge">8 Mini-Games</div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                      <div class="modern-card text-center h-100 card-hover-effect">
+                        <div class="card-icon-wrapper mb-3">
+                          <div class="card-icon">
+                            <i class="fas fa-file-pdf"></i>
+                          </div>
+                        </div>
+                        <h5 class="card-title">Downloadable Resources</h5>
+                        <p class="card-text">Access comprehensive PDF materials that complement each video for deeper understanding and reference.</p>
+                        <div class="feature-badge">Free PDFs</div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                      <div class="modern-card text-center h-100 card-hover-effect">
+                        <div class="card-icon-wrapper mb-3">
+                          <div class="card-icon">
+                            <i class="fas fa-certificate"></i>
+                          </div>
+                        </div>
+                        <h5 class="card-title">Course Completion</h5>
+                        <p class="card-text">Complete the course and provide valuable feedback to help us improve the learning experience.</p>
+                        <div class="feature-badge">100% Free</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course Progress Indicator -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="modern-card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title mb-3">Ready to Begin?</h5>
+                          <p class="card-text mb-4">
+                            Start with Video 1 and progress through each module at your own pace. 
+                            Each video includes an interactive game and downloadable resources.
+                          </p>
+                          <a href="#video-courses" class="btn btn-modern">
+                            <i class="fas fa-play me-2"></i>
+                            Begin Course Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Course Introduction End -->
 
               <!-- Video Course Section -->
               <section id="video-courses" class="section-py bg-white">
                 <div class="container">
+                  <!-- Section Header -->
+                  <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                      <h2 class="display-6 fw-bold text-primary mb-3 animate__animated animate__fadeInUp">
+                        Course Modules
+                      </h2>
+                      <p class="lead text-secondary animate__animated animate__fadeInUp animate__delay-1s">
+                        Progress through 8 comprehensive modules, each featuring an educational video, 
+                        interactive mini-game, and downloadable resources to enhance your learning experience.
+                      </p>
+                    </div>
+                  </div>
+
                   <div class="row justify-content-center">
                     <div class="col-lg-10">
                       <div class="course-videos">
-                        <!-- Video 1 -->
+                        <!-- Module 1: AI Fundamentals -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 1: Understanding Artificial Intelligence</h3>
+                                <p class="text-muted mb-0">A Beginner's Guide to AI Fundamentals</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-primary fs-6">🤖 Fundamentals</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/9dKY-O9LBXo" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="Understanding Artificial Intelligence - A Beginner's Guide">
                             </iframe>
                           </div>
                           <!-- Mini Game 1: Quiz -->
@@ -244,13 +454,26 @@
                           </a>
                         </div>
 
-                        <!-- Video 2 -->
+                        <!-- Module 2: How AI Works -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 2: How Does Artificial Intelligence Actually Work</h3>
+                                <p class="text-muted mb-0">Deep dive into AI mechanics and processes</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-info fs-6">⚙️ Mechanics</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/wAGGyoJM-iY" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="How Does Artificial Intelligence Actually Work">
                             </iframe>
                           </div>
                           <!-- Mini Game 2: Memory Game -->
@@ -294,13 +517,26 @@
                           </a>
                         </div>
 
-                        <!-- Video 3 -->
+                        <!-- Module 3: AI Ethics -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 3: The Ethics of Artificial Intelligence</h3>
+                                <p class="text-muted mb-0">Exploring moral considerations in AI development and use</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-warning fs-6">⚖️ Ethics</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/HE0B2LmKcuE" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="The Ethics of Artificial Intelligence">
                             </iframe>
                           </div>
                           <!-- Mini Game 3: Word Scramble -->
@@ -339,13 +575,26 @@
                           </a>
                         </div>
 
-                        <!-- Video 4 -->
+                        <!-- Module 4: AI at Work -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 4: AI at Work</h3>
+                                <p class="text-muted mb-0">How AI is transforming industries and workplace dynamics</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-success fs-6">💼 Industry</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/xtOChJhyXJM" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="AI at Work - How AI is Transforming Industries">
                             </iframe>
                           </div>
                           <!-- Mini Game 4: Click Game -->
@@ -383,13 +632,26 @@
                           </a>
                         </div>
 
-                        <!-- Video 5 -->
+                        <!-- Module 5: AI in Education -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 5: AI in Education and Research</h3>
+                                <p class="text-muted mb-0">A responsible approach to AI in learning environments</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-danger fs-6">🎓 Education</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/fTyKDhrxQ0w" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="AI in Education and Research - A Responsible Approach">
                             </iframe>
                           </div>
                           <!-- Mini Game 5: Matching Game -->
@@ -433,13 +695,26 @@
                           </a>
                         </div>
 
-                        <!-- Video 6 -->
+                        <!-- Module 6: AI and Creativity -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 6: AI and Creativity</h3>
+                                <p class="text-muted mb-0">Can machines truly create? Exploring AI's creative capabilities</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-secondary fs-6">🎨 Creativity</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/TBswPhqPfmI" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="AI and Creativity - Can Machines Truly Create">
                             </iframe>
                           </div>
                           <!-- Mini Game 6: Slider Game -->
@@ -482,13 +757,26 @@
                           </a>
                         </div>
 
-                        <!-- Video 7 -->
+                        <!-- Module 7: Navigating the Digital Age -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 7: Navigating the Digital Age</h3>
+                                <p class="text-muted mb-0">Spotting AI-generated content and misinformation</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-dark fs-6">🕵️ Detection</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/IMSusSnZoE0" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="Navigating the Digital Age - Spotting AI Generated Content and Misinformation">
                             </iframe>
                           </div>
                           <!-- Mini Game 7: True/False -->
@@ -529,13 +817,26 @@
                           </a>
                         </div>
 
-                        <!-- Video 8 -->
+                        <!-- Module 8: AI in Your Life and Career -->
                         <div class="video-container mb-5">
+                          <div class="module-header mb-4">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h3 class="h4 fw-bold text-primary mb-1">Module 8: AI in Your Life and Career</h3>
+                                <p class="text-muted mb-0">Practical applications and future opportunities</p>
+                              </div>
+                              <div class="module-badge">
+                                <span class="badge bg-gradient-primary fs-6">🚀 Future</span>
+                              </div>
+                            </div>
+                          </div>
+                          
                           <div class="video-wrapper">
                             <iframe 
                               src="https://www.youtube.com/embed/VRqJ3NCD2WE" 
                               class="course-video" 
-                              allow="autoplay">
+                              allow="autoplay"
+                              title="AI in Your Life and Career">
                             </iframe>
                           </div>
                           <!-- Mini Game 8: Drag and Drop -->
@@ -585,61 +886,222 @@
               </section>
               <!-- Video Course Section End -->
 
+              <!-- Student Success Stories -->
+              <section class="section-py bg-gradient-light">
+                <div class="container">
+                  <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                      <h2 class="display-6 fw-bold text-primary mb-3 animate__animated animate__fadeInUp">
+                        Student Success Stories
+                      </h2>
+                      <p class="lead text-secondary animate__animated animate__fadeInUp animate__delay-1s">
+                        Hear from learners who have completed our AI course and how it has impacted their understanding of technology and global citizenship.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-card h-100">
+                        <div class="testimonial-header mb-3">
+                          <div class="testimonial-avatar">
+                            <img src="../assets/img/avatars/1.png" alt="Maria" class="rounded-circle">
+                          </div>
+                          <div class="testimonial-info">
+                            <h5 class="mb-1">Maria S.</h5>
+                            <p class="text-muted small mb-1">University Student, Italy</p>
+                            <div class="stars">
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-content">
+                          <p>"This course completely changed my perspective on AI! The interactive games made complex concepts so much easier to understand. I now feel confident discussing AI ethics and its impact on society."</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-card h-100">
+                        <div class="testimonial-header mb-3">
+                          <div class="testimonial-avatar">
+                            <img src="../assets/img/avatars/2.png" alt="Sophie" class="rounded-circle">
+                          </div>
+                          <div class="testimonial-info">
+                            <h5 class="mb-1">Sophie L.</h5>
+                            <p class="text-muted small mb-1">High School Student, France</p>
+                            <div class="stars">
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-content">
+                          <p>"The mini-games were my favorite part! Learning about AI through puzzles and quizzes made it feel less intimidating. I'm now considering studying computer science because of this course."</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                      <div class="testimonial-card h-100">
+                        <div class="testimonial-header mb-3">
+                          <div class="testimonial-avatar">
+                            <img src="../assets/img/avatars/3.png" alt="Elena" class="rounded-circle">
+                          </div>
+                          <div class="testimonial-info">
+                            <h5 class="mb-1">Elena K.</h5>
+                            <p class="text-muted small mb-1">Career Changer, Germany</p>
+                            <div class="stars">
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                              <i class="fas fa-star text-warning"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="testimonial-content">
+                          <p>"As someone transitioning into tech, this course gave me the foundation I needed. The practical examples and real-world applications helped me understand how AI fits into various industries."</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Course Impact Stats -->
+                  <div class="row mt-5">
+                    <div class="col-12">
+                      <div class="community-stats">
+                        <div class="row g-4 text-center">
+                          <div class="col-lg-3 col-md-6">
+                            <div class="stat-circle">
+                              <div class="stat-circle-inner">
+                                <i class="fas fa-users"></i>
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Students Enrolled</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="stat-circle">
+                              <div class="stat-circle-inner">
+                                <i class="fas fa-star"></i>
+                                <div class="stat-number">4.9</div>
+                                <div class="stat-label">Average Rating</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="stat-circle">
+                              <div class="stat-circle-inner">
+                                <i class="fas fa-certificate"></i>
+                                <div class="stat-number">92%</div>
+                                <div class="stat-label">Completion Rate</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                            <div class="stat-circle">
+                              <div class="stat-circle-inner">
+                                <i class="fas fa-heart"></i>
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Would Recommend</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Student Success Stories End -->
+
               <!-- Final Feedback Form Section -->
-              <section id="final-feedback" class="section-py bg-light">
+              <section id="final-feedback" class="section-py bg-white">
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="col-lg-10">
                       <!-- Section Header -->
                       <div class="text-center mb-5">
                         <div class="mb-3 animate__animated animate__fadeInDown">
-                          <i class="ti tabler-clipboard-check text-primary" style="font-size: 48px;"></i>
+                          <i class="fas fa-clipboard-check text-primary" style="font-size: 48px;"></i>
                         </div>
                         <h2 class="display-6 fw-bold text-primary mb-3 animate__animated animate__fadeInUp">
-                          Complete Your Learning Journey
+                          🎉 Congratulations! You've Completed the Course!
                         </h2>
                         <p class="lead text-secondary mb-4 animate__animated animate__fadeInUp animate__delay-1s">
-                          You've watched all our videos and completed the interactive mini-games! 
-                          Now help us improve by sharing your valuable feedback and insights about the entire course experience.
+                          Amazing work! You've successfully watched all 8 videos, completed the interactive mini-games, and accessed our comprehensive resources. 
+                          Now help us make this course even better by sharing your valuable insights and feedback.
                         </p>
                       </div>
 
-                      <!-- Course Summary Stats -->
+                      <!-- Course Summary Stats with Enhanced Design -->
                       <div class="row mb-5 animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="col-md-3 col-6 mb-4">
                           <div class="stats-card text-center p-4 h-100">
                             <div class="stats-icon mb-3">
-                              <i class="ti tabler-video text-primary"></i>
+                              <i class="fas fa-video text-primary" style="font-size: 2rem;"></i>
                             </div>
-                            <h3 class="stats-number text-primary fw-bold">8</h3>
-                            <p class="stats-label text-secondary mb-0">Videos Watched</p>
+                            <h3 class="stats-number text-primary fw-bold display-6">8</h3>
+                            <p class="stats-label text-secondary mb-0 fw-semibold">Videos Completed ✅</p>
                           </div>
                         </div>
                         <div class="col-md-3 col-6 mb-4">
                           <div class="stats-card text-center p-4 h-100">
                             <div class="stats-icon mb-3">
-                              <i class="ti tabler-puzzle text-warning"></i>
+                              <i class="fas fa-gamepad text-success" style="font-size: 2rem;"></i>
                             </div>
-                            <h3 class="stats-number text-warning fw-bold">8</h3>
-                            <p class="stats-label text-secondary mb-0">Games Completed</p>
+                            <h3 class="stats-number text-success fw-bold display-6">8</h3>
+                            <p class="stats-label text-secondary mb-0 fw-semibold">Games Mastered 🎮</p>
                           </div>
                         </div>
                         <div class="col-md-3 col-6 mb-4">
                           <div class="stats-card text-center p-4 h-100">
                             <div class="stats-icon mb-3">
-                              <i class="ti tabler-file-text text-success"></i>
+                              <i class="fas fa-file-pdf text-warning" style="font-size: 2rem;"></i>
                             </div>
-                            <h3 class="stats-number text-success fw-bold">8</h3>
-                            <p class="stats-label text-secondary mb-0">PDFs Available</p>
+                            <h3 class="stats-number text-warning fw-bold display-6">8</h3>
+                            <p class="stats-label text-secondary mb-0 fw-semibold">PDFs Available 📚</p>
                           </div>
                         </div>
                         <div class="col-md-3 col-6 mb-4">
                           <div class="stats-card text-center p-4 h-100">
                             <div class="stats-icon mb-3">
-                              <i class="ti tabler-certificate text-info"></i>
+                              <i class="fas fa-trophy text-danger" style="font-size: 2rem;"></i>
                             </div>
-                            <h3 class="stats-number text-info fw-bold">100%</h3>
-                            <p class="stats-label text-secondary mb-0">Course Progress</p>
+                            <h3 class="stats-number text-danger fw-bold display-6">100%</h3>
+                            <p class="stats-label text-secondary mb-0 fw-semibold">Course Progress 🏆</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Enhanced Achievement Banner -->
+                      <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8">
+                          <div class="modern-card text-center achievement-banner">
+                            <div class="card-body p-4">
+                              <div class="achievement-icon mb-3">
+                                <i class="fas fa-medal text-warning" style="font-size: 3rem;"></i>
+                              </div>
+                              <h4 class="fw-bold text-primary mb-2">🌟 Course Achievement Unlocked! 🌟</h4>
+                              <p class="text-secondary mb-3">
+                                You're now equipped with essential AI knowledge and global citizenship awareness. 
+                                You've joined a community of empowered learners making a difference in the world!
+                              </p>
+                              <div class="achievement-badges d-flex justify-content-center gap-2 flex-wrap">
+                                <span class="badge bg-primary px-3 py-2">🎓 AI Explorer</span>
+                                <span class="badge bg-success px-3 py-2">🧠 Critical Thinker</span>
+                                <span class="badge bg-warning px-3 py-2">🌍 Global Citizen</span>
+                                <span class="badge bg-info px-3 py-2">🚀 Future Ready</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>

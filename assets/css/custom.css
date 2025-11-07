@@ -3292,6 +3292,231 @@ textarea:focus {
 }
 
 /* Project Showcase */
+
+/* Module Header Styling for Course Page */
+.module-header {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(105, 108, 255, 0.1), rgba(255, 255, 255, 0.8));
+  border-radius: 12px;
+  border: 1px solid rgba(105, 108, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.module-header:hover {
+  background: linear-gradient(135deg, rgba(105, 108, 255, 0.15), rgba(255, 255, 255, 0.9));
+  border-color: rgba(105, 108, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(105, 108, 255, 0.15);
+}
+
+.module-header h3 {
+  color: var(--bs-primary);
+  margin-bottom: 0.25rem;
+}
+
+.module-header p {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.module-badge .badge {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 25px;
+  font-size: 0.85rem !important;
+  text-transform: none;
+}
+
+.badge.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--bs-primary), #4f46e5) !important;
+}
+
+/* Enhanced Video Container */
+.video-container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.video-container:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Course Progress Indicator */
+.course-progress-indicator {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.progress-step:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.progress-step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.progress-step.completed .progress-step-number {
+  background: var(--bs-success);
+  color: white;
+}
+
+.progress-step.current .progress-step-number {
+  background: var(--bs-primary);
+  color: white;
+}
+
+.progress-step.pending .progress-step-number {
+  background: #e9ecef;
+  color: #6c757d;
+}
+
+/* Enhanced Mini Games Styling */
+.mini-game-container {
+  margin-top: 2rem;
+  background: linear-gradient(135deg, #f8f9fa, rgba(255, 255, 255, 0.9));
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.mini-game-container:hover {
+  border-color: rgba(105, 108, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(105, 108, 255, 0.1);
+}
+
+.game-header {
+  background: linear-gradient(135deg, var(--bs-primary), #4f46e5);
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem 1.5rem;
+}
+
+.game-header h5 {
+  margin: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.game-header i {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments for module headers */
+@media (max-width: 768px) {
+  .module-header {
+    padding: 1rem;
+  }
+  
+  .module-header .d-flex {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+  
+  .module-badge {
+    align-self: flex-start;
+  }
+  
+  .module-header h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+  
+  .video-container {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .module-header {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .module-header h3 {
+    font-size: 1rem;
+  }
+  
+  .module-header p {
+    font-size: 0.85rem;
+  }
+  
+  .module-badge .badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Achievement Banner Styling */
+.achievement-banner {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(40, 167, 69, 0.1));
+  border: 2px solid rgba(255, 193, 7, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: rotate(45deg);
+  animation: shimmer-achievement 3s infinite;
+}
+
+@keyframes shimmer-achievement {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+  100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+}
+
+.achievement-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.achievement-badges .badge {
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.achievement-badges .badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 .project-showcase {
     position: relative;
     z-index: 2;

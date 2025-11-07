@@ -3885,7 +3885,7 @@ textarea:focus {
 
 .timeline-date {
     position: absolute;
-    top: -15px;
+    top: 5px;
     right: 20px;
     background: linear-gradient(135deg, #ff6b6b, #ee5a24);
     color: white;

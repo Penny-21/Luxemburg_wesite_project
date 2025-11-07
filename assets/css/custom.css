@@ -4580,5 +4580,117 @@ textarea:focus {
   }
 }
 
+/* ===== PROJECT DESCRIPTION SECTION STYLES ===== */
+
+/* Project Story Card */
+.project-story-card {
+    border: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.95));
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-story-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #28a745, #ffc107, #dc3545);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.story-header {
+    position: relative;
+}
+
+.story-icon-wrapper {
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: 50%;
+    animation: float-gentle 3s ease-in-out infinite;
+}
+
+.story-icon {
+    font-size: 2.5rem;
+    animation: pulse 2s infinite;
+}
+
+.story-text p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.story-text .lead {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.implementation-info {
+    border-left: 4px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.implementation-info:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1);
+}
+
+/* Footer Disclaimer Styles */
+.funding-disclaimer {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 3px solid #007bff;
+}
+
+.disclaimer-item-footer {
+    padding: 0.5rem 0;
+}
+
+.disclaimer-item-footer:hover {
+    background: rgba(0, 123, 255, 0.05);
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments for project description */
+@media (max-width: 768px) {
+    .story-icon {
+        font-size: 2rem;
+    }
+    
+    .story-text p,
+    .story-text .lead {
+        font-size: 1rem;
+    }
+    
+    .project-story-card {
+        margin: 0 1rem;
+    }
+    
+    .implementation-info {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .story-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .story-icon-wrapper {
+        padding: 0.75rem;
+    }
+    
+    .story-icon {
+        font-size: 1.75rem;
+    }
+}
+
 
 

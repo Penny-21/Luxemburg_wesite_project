@@ -436,9 +436,9 @@ textarea:focus {
 }
 
 .partner-img {
-    height: 80px;
+    height: 100px;
     width: auto;
-    max-width: 120px;
+    max-width: 100px;
     border-radius: 8px;
     transition: all 0.3s ease;
     opacity: 0.8;
@@ -461,7 +461,7 @@ textarea:focus {
     }
     
     .partner-img {
-        height: 60px;
+        height: 90px;
         max-width: 90px;
     }
 }

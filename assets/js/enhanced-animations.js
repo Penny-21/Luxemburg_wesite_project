@@ -11,16 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
         
         counters.forEach(counter => {
             const target = parseInt(counter.getAttribute('data-target'));
+            const suffix = counter.getAttribute('data-suffix') || '';
             const increment = target / 100;
             let current = 0;
             
             const updateCounter = () => {
                 if (current < target) {
                     current += increment;
-                    counter.textContent = Math.ceil(current);
+                    counter.textContent = Math.ceil(current) + suffix;
                     requestAnimationFrame(updateCounter);
                 } else {
-                    counter.textContent = target;
+                    counter.textContent = target + suffix;
                     // Add sparkle effect when animation completes
                     addSparkleEffect(counter);
                 }

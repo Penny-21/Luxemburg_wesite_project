@@ -4692,5 +4692,307 @@ textarea:focus {
     }
 }
 
+/* =================================================================
+   DARK MODE STYLES FOR VIDEO COURSES
+   ================================================================= */
+
+/* Dark mode video container styling */
+[data-bs-theme="dark"] .video-container {
+    background: #2b2b2b;
+    border-color: rgba(255, 224, 102, 0.4);
+    box-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.3),
+        0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .video-container:hover {
+    background: #333333;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 4px 16px rgba(0, 0, 0, 0.3),
+        0 0 0 3px rgba(255, 224, 102, 0.5);
+    border-color: #ffe066;
+}
+
+[data-bs-theme="dark"] .video-wrapper {
+    background: #1e1e1e;
+}
+
+/* Dark mode module header styling */
+[data-bs-theme="dark"] .module-header h4 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .module-header p {
+    color: #cccccc;
+}
+
+/* Dark mode mini-games container */
+[data-bs-theme="dark"] .mini-game-container {
+    background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
+    border-color: rgba(255, 224, 102, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .game-header {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .game-header h5 {
+    color: #ffe066;
+}
+
+[data-bs-theme="dark"] .quiz-game .question {
+    color: #ffffff;
+}
+
+/* Dark mode quiz options */
+[data-bs-theme="dark"] .option-btn {
+    background: #404040;
+    border-color: #ffe066;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .option-btn:hover {
+    background: #ffe066;
+    color: #000000;
+}
+
+[data-bs-theme="dark"] .option-btn.correct {
+    background: #28a745 !important;
+    border-color: #28a745 !important;
+    color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .option-btn.incorrect {
+    background: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: #ffffff !important;
+}
+
+/* Dark mode memory game */
+[data-bs-theme="dark"] .memory-card {
+    background: #404040;
+    border-color: #ffe066;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .memory-card::before {
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] .memory-card:hover {
+    background: #505050;
+}
+
+/* Dark mode PDF buttons */
+[data-bs-theme="dark"] .pdf-button {
+    background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
+    border-color: rgba(255, 224, 102, 0.4);
+}
+
+[data-bs-theme="dark"] .pdf-button:hover {
+    background: linear-gradient(135deg, #333333 0%, #404040 100%);
+    border-color: #ffe066;
+    box-shadow: 0 8px 25px rgba(255, 224, 102, 0.3);
+}
+
+[data-bs-theme="dark"] .pdf-text-content h6 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .pdf-text-content p {
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] .pdf-icon-wrapper i {
+    color: #ffe066;
+}
+
+[data-bs-theme="dark"] .pdf-arrow i {
+    color: #ffe066;
+}
+
+/* Dark mode modern cards */
+[data-bs-theme="dark"] .modern-card {
+    background: #2b2b2b;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .modern-card:hover {
+    background: #333333;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+[data-bs-theme="dark"] .modern-card .card-title {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .modern-card .card-text {
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] .feature-badge {
+    background: linear-gradient(135deg, #ffe066, #ffb300);
+    color: #000000;
+}
+
+/* Dark mode course features */
+[data-bs-theme="dark"] .card-hover-effect {
+    background: #2b2b2b;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .card-hover-effect:hover {
+    background: #333333;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+[data-bs-theme="dark"] .card-hover-effect .card-title {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .card-hover-effect .card-text {
+    color: #cccccc;
+}
+
+/* Dark mode testimonial cards */
+[data-bs-theme="dark"] .testimonial-card {
+    background: #2b2b2b;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .testimonial-card h5 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .testimonial-card p {
+    color: #cccccc;
+}
+
+/* Dark mode stats cards */
+[data-bs-theme="dark"] .stats-card {
+    background: #2b2b2b;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .stats-number {
+    color: #ffe066 !important;
+}
+
+[data-bs-theme="dark"] .stats-label {
+    color: #cccccc !important;
+}
+
+/* Dark mode final form card */
+[data-bs-theme="dark"] .final-form-card {
+    background: #2b2b2b;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .form-header-enhanced h3 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .form-description-enhanced {
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] .achievement-banner {
+    background: linear-gradient(135deg, #2a2a2a 0%, #333333 100%);
+    border-color: rgba(255, 224, 102, 0.4);
+}
+
+[data-bs-theme="dark"] .achievement-banner h4 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .achievement-banner p {
+    color: #cccccc;
+}
+
+/* Dark mode resource cards */
+[data-bs-theme="dark"] .resource-card {
+    background: #2b2b2b;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .resource-card:hover {
+    background: #333333;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+[data-bs-theme="dark"] .resource-card h5 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .resource-card p {
+    color: #cccccc;
+}
+
+/* Dark mode community stats */
+[data-bs-theme="dark"] .community-stats {
+    background: #2b2b2b;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .stat-circle {
+    background: #333333;
+    border-color: rgba(255, 224, 102, 0.4);
+}
+
+[data-bs-theme="dark"] .stat-circle h3 {
+    color: #ffe066;
+}
+
+[data-bs-theme="dark"] .stat-circle p {
+    color: #cccccc;
+}
+
+/* Dark mode course highlights */
+[data-bs-theme="dark"] .course-highlights {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .highlight-item {
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] .highlight-item i {
+    color: #ffe066;
+}
+
+/* Dark mode thank you message */
+[data-bs-theme="dark"] .thank-you-message h5 {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .thank-you-message p {
+    color: #cccccc;
+}
+
+[data-bs-theme="dark"] .thank-you-icon {
+    color: #ffe066;
+}
+
+/* Dark mode iframe background fix */
+[data-bs-theme="dark"] .form-wrapper-enhanced {
+    background: #2b2b2b;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Dark mode section backgrounds */
+[data-bs-theme="dark"] .bg-gradient-light {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%) !important;
+}
+
+[data-bs-theme="dark"] .bg-white {
+    background: #1e1e1e !important;
+}
+
 
 

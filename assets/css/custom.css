@@ -4155,7 +4155,7 @@ textarea:focus {
   width: 100px;
   height: 100px;
   margin: 0 auto 2rem;
-  border-radius: 50%;
+  border-radius: 35%;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   background: white;
